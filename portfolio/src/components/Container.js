@@ -1,8 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { Header } from "./Header"
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalContext";
-import { ConfigureScreen } from "./ConfigureScreen";
 import { Main } from "./Main";
 
 const Content = styled.div`
@@ -15,8 +14,8 @@ const Content = styled.div`
     margin: 0 auto;
     -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);
-    /* border: 5px solid red; */
     display: flex;
+    /* border: 5px solid red; */
   }
   .error{
     justify-content: center;
@@ -29,11 +28,10 @@ export const Container = () => {
 
   return(
     <Content>
-      {language === '/pt' || language === '/en'? 
+      {language === '/' || language === '/pt' || language === '/en'? 
       <div>
         <Header/>
         <Main/>
-
       </div>
       :
       <div className="error">

@@ -9,7 +9,9 @@ function App() {
   setTimeout(() => isLoading(false), 3500)
   
   const language = window.location.pathname
+  const defaultLanguage = "/pt"
   const BASE_URL = 'http://localhost:3000'
+  // const BASE_URL = 'http://laisrmacedo.vercel.app'
   const [currentTheme, setCurrentTheme] = useState(false || JSON.parse(localStorage.getItem("theme")))
   
   useEffect(()=>{
@@ -18,6 +20,7 @@ function App() {
   
   const context = {
     language,
+    defaultLanguage,
     currentTheme,
     setCurrentTheme,
     BASE_URL
