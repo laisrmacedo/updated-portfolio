@@ -29,15 +29,6 @@ const Container = styled.section`
       gap: 12px;
     }
 
-  .skill{
-    background: #5671858a;
-    font-variant: all-small-caps;
-    padding: 2px 12px;
-    border-radius: 12px;
-    font-size: 14px;
-    color: #C4C7AC;
-  }
-
   .allSkills{
     justify-content: center;
     flex-direction: column;

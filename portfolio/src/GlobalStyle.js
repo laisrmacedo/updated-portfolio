@@ -75,4 +75,13 @@ export const GlobalStyle = createGlobalStyle`
       transition: background .3s ease-in-out;
     }
   }
+
+  .skill{
+    background:  ${(props) => (props.currentTheme ? '#F9F3EB8a' : '#50677A')};
+    font-variant: all-small-caps;
+    padding: 2px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: ${(props) => (props.currentTheme ? '#485C6D' : '#C4C7AC')};
+  }
 `
