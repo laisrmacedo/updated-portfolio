@@ -13,25 +13,41 @@ export const GlobalStyle = createGlobalStyle`
     transition: background 1s ease-in-out;
 
     ::-webkit-scrollbar-track {
-      background: #000; 
+      /* background: #000;  */
     };
     ::-webkit-scrollbar{
       width: 8px;
     };
     ::-webkit-scrollbar-thumb {
-      background: #7b2609; 
+      background: rgba(124,161,191,0.1);
       border-radius: 4px;
     };
     ::-webkit-scrollbar-thumb:hover {
-      background: #D5D8DE; 
+      background: rgba(124,161,191,0.2); 
     }
     ::-webkit-scrollbar-thumb:active {
-      background: #D5D8DE; 
+      background: rgba(124,161,191,0.3); 
     }
+  }
+
+  body{
+    overflow-y: hidden;
+  }
+
+  section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+    /* height: 100%; */
   }
 
   h1{
     font-size: 32px;
+  }
+
+  h2{
+    font-size: 20px;
   }
   
   h3{

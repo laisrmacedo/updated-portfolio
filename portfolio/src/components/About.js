@@ -5,14 +5,7 @@ import FadeIn from "./transitions/FadeIn";
 
 
 const Container = styled.section`
-  width: 100%;
-  /* height: 100%; */
-  display: flex;
-  /* border: 1px solid red; */
-  flex-direction: column;
   gap: 20px;
-  /* align-items: center; */
-  /* justify-content: space-between; */
   div{
     display: flex;
     justify-content: end;

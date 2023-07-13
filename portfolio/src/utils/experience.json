@@ -1,0 +1,24 @@
+[
+  {
+    "titlePT" : "Desenvolvedora Web Full Stack Freelancer",
+    "titleEN" : "Freelance Full Stack Web Developer",
+    "company" : "",
+    "link" : "",
+    "timePT" : "MAIO - PRESENTE",
+    "timeEN" : "MAY - PRESENT",
+    "descriptionPT" : "Desenvolvimento de soluções web personalizadas, com implementação do front-end e/ou back-end.",
+    "descriptionEN" : "Development of custom web solutions, with front-end and/or back-end implementation.",
+    "skills" : ["React", "JavaScript", "TypeScript", "CSS", "Node.JS", "Jest"]
+  },
+  {
+    "titlePT" : "Desenvolvedora Full Stack",
+    "titleEN" : "Full Stack Developer",
+    "company" : "CocriarSe Carreiras",
+    "link" : "",
+    "timePT" : "ABRIL - PRESENTE",
+    "timeEN" : "APRIL - PRESENT",
+    "descriptionPT" : "Responsável pelo desenvolvimento do site da CocriarSe Carreiras. A atividade conta com a participação de uma equipe multifuncional e multicultural.",
+    "descriptionEN" : "Responsible for the development of the CocriarSe Carreiras website. The activity counts on the participation of a multifunctional and multicultural team.",
+    "skills" : ["WordPress", "JavaScript", "CSS", "Figma"]
+  }
+]

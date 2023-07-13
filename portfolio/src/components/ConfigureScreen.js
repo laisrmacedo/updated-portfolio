@@ -11,7 +11,10 @@ const Div = styled.div`
   align-items: center;
   justify-content: end;
   gap: 20px;
+  padding-right: 40px;
   /* border: 1px solid red; */
+  /* position: sticky;
+  top: 0; */
 
   img{
     height: 20px;
