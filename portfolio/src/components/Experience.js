@@ -65,7 +65,7 @@ const Container = styled.section`
         width: 18px;
         height: 18px;
         overflow-y: hidden;
-        transform: ${(props) => (props.openContainer ? 'none' : 'rotate(45deg)')};
+        transform: ${(props) => (props.open ? 'none' : 'rotate(45deg)')};
         transition: transform .3s ease-in-out;
         p{
           position: absolute;
@@ -77,16 +77,16 @@ const Container = styled.section`
     }
   }
   #skillsContainer{
-    display: ${(props) => (props.openContainer ? 'flex' : 'none')};
+    display: ${(props) => (props.open ? 'flex' : 'none')};
   }
 `
 
 export const Experience = () => {
   const { language } = useContext(GlobalContext)
-  const [openContainer, setOpenContainer] = useState(false)
+  const [openDiv, setOpenDiv] = useState(false)
 
   return(
-    <Container openContainer={openContainer}>
+    <Container open={openDiv}>
       {experiences.map((i, index) => {
         return(
           <div key={index}>
@@ -104,7 +104,7 @@ export const Experience = () => {
         )
       })}
       <div className="allSkills">
-        <div onClick={() => setOpenContainer(!openContainer)}>
+        <div onClick={() => setOpenDiv(!openDiv)}>
           <h3>{language === '/pt' ? "Minhas Habilidades" : "All Skills"}</h3>
           <span id="rotateBtn">
             <p style={{transform: 'rotate(45deg)'}}>|</p>
