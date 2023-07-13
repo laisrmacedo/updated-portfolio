@@ -5,13 +5,18 @@ import { GlobalContext } from "../context/GlobalContext";
 import { Main } from "./Main";
 
 const Content = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  
   >div{
     width: 100%;
     height: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1); 
     box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);
     display: flex;

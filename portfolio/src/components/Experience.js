@@ -33,17 +33,19 @@ const Container = styled.section`
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid #50677A;
+    border: 1px solid #7CA1BF6a;
     padding: 16px;
     margin-top: 20px;
     border-radius: 12px;
     
     h3{
       font-size: 12px;
+      margin: 0;
     }
     div{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       overflow-y: hidden;
       cursor: pointer;
       height: 10%;
@@ -63,6 +65,7 @@ const Container = styled.section`
           z-index: 2;
           font-size: 12px;
           line-height: 12px;
+          font-weight: 400;
         }
       }
     }

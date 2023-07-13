@@ -5,7 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
     background:  ${(props) => (props.currentTheme ? '#fff' : '#485C6D')};
@@ -84,4 +84,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 14px;
     color: ${(props) => (props.currentTheme ? '#485C6D' : '#C4C7AC')};
   }
+`
+
+export const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 `

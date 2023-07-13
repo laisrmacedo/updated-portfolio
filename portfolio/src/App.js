@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Loading } from "./components/Loading";
 import { Container } from "./components/Container";
 import { GlobalContext } from "./context/GlobalContext";
-import { GlobalStyle } from "./GlobalStyle";
+import { GlobalStyle, AppContainer } from "./GlobalStyle";
 
 function App() {
   const [loading, isLoading] = useState(true)
@@ -29,11 +29,13 @@ function App() {
   return (
     <GlobalContext.Provider value={context}>
       <GlobalStyle currentTheme={currentTheme}/>
-      {loading ?  
-        <Loading/>
-        :
-        <Container/>
-      }
+      <AppContainer>
+        {loading ?  
+          <Loading/>
+          :
+          <Container/>
+        }
+      </AppContainer>
     </GlobalContext.Provider>
   );
 }
