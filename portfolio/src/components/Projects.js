@@ -66,21 +66,21 @@ export const Projects = () => {
   // });
   return(
     <Container>
-      {/* {project} */}
-      <div>
-        <span className="project-logo">
-          <img src={api}/>
-        </span>
-        {/* <div> */}
-          <div className="title">
-            <span>
-              <h3>{projects[0].titleEN}</h3>
-              {/* <p>{projects[0].endedEN}</p> */}
-            </span>
-            <p>{projects[0].descriptionEN}</p>
-          </div>
-        {/* </div> */}
-      </div>
+      {projects.map((project) => {
+        return(
+          <div>
+          <span className="project-logo">
+            <img src={project.image}/>
+          </span>
+            <div className="title">
+              <span>
+                <h3>{project.titleEN}</h3>
+              </span>
+              <p>{project.descriptionEN}</p>
+            </div>
+        </div>
+        )
+      })}
     </Container>
   )
 }
