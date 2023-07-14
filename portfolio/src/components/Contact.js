@@ -83,7 +83,7 @@ const Container = styled.section`
     
     img{
       background: transparent;
-      max-width: 80px;
+      max-width: 60px;
       filter: brightness(0.8);
       @media screen and (max-width: ${(props) => (props.bp + 'px')}){
         max-width: 50px;
