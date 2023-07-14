@@ -18,8 +18,8 @@ const Container = styled.header`
     width: 100%;
     height: 20%;
     flex-direction: row;
-    justify-content: center;
-    padding: 20px 0;
+    /* justify-content: center; */
+    padding: 20px 40px;
   }
   
   .title{
@@ -31,7 +31,7 @@ const Container = styled.header`
       /* border: 1px solid red; */
       height: 100%;
       max-width: 100vw;
-      justify-content: center;
+      /* justify-content: center; */
       min-height: 65px;
       h1{
         font-size: min(6vw, 32px)
