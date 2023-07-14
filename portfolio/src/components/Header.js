@@ -28,11 +28,12 @@ const Container = styled.header`
     align-items: center;
     gap: 15px;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
-      /* border: 1px solid red; */
       height: 100%;
-      max-width: 100vw;
-      /* justify-content: center; */
-      min-height: 65px;
+      min-height: 50px;
+      >div{
+        /* border: 1px solid red; */
+        max-width: 50px;
+      }
       h1{
         font-size: min(6vw, 32px)
       }
