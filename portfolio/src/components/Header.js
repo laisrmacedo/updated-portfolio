@@ -22,7 +22,7 @@ const Container = styled.header`
     padding: 20px 0;
     /* border: 1px solid red; */
   }
-
+  
   .title{
     height: 10%;
     display: flex;
@@ -30,6 +30,9 @@ const Container = styled.header`
     gap: 15px;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
       height: 100%;
+      width:100%;
+      justify-content: center;
+      min-height: 65px;
       h1{
         font-size: min(6vw, 32px)
       }

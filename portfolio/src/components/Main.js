@@ -14,6 +14,7 @@ const Container = styled.main`
 
   @media screen and (max-width: ${(props) => (props.bp + 'px')}){
     width: 100%;
+    height: 90%;
     padding: 0 0 0 40px;
   }
 
