@@ -38,7 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 120px;
+    margin: 20px 0 100px 0;
     /* height: 100%; */
   }
 

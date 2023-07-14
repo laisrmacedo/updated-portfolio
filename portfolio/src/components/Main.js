@@ -5,6 +5,7 @@ import { Experience } from "./Experience";
 import { Projects } from "./Projects";
 import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
+import { Contact } from "./Contact";
 
 const Container = styled.main`
   width: 60%;
@@ -43,6 +44,7 @@ export const Main = () => {
         <About></About>
         <Experience></Experience>
         <Projects></Projects>
+        <Contact/>
       </nav>
     </Container>
   )
