@@ -80,7 +80,7 @@ export const Experience = () => {
   const [openDiv, setOpenDiv] = useState(false)
 
   return(
-    <Container open={openDiv}>
+    <Container id="experience" open={openDiv}>
       {experiences.map((i, index) => {
         return(
           <div key={index}>

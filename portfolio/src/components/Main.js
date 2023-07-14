@@ -30,7 +30,7 @@ export const Main = () => {
   return(
     <Container>
       <ConfigureScreen/>
-      <nav>
+      <nav id="navContainer">
         <About></About>
         <Experience></Experience>
         <Projects></Projects>

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import projects from "../utils/projects.json"
-import labenu from "../assets/labenu.png"
-import api from "../assets/api.png"
+
 const Container = styled.section`
   width: 100%;
+  gap: 20px;
+
   >div{
     display: flex;
     width: 100%;
@@ -67,10 +68,14 @@ const Container = styled.section`
       flex-wrap: wrap;
       a{
         text-decoration: none;
+        font-size: 16px;
+        &:hover{
+          font-size: 18px;
+          transition: font-size .3s ease-in-out;
+        }
       }
       h5{
         transform: rotate(45deg);
-        font-size: 16px;
       }
     }
   }
@@ -87,7 +92,7 @@ export const Projects = () => {
   //   console.error('Erro:', error);
   // });
   return(
-    <Container>
+    <Container id="projects">
       {projects.map((project, i) => {
         return(
           <div key={i}>

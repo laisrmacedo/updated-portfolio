@@ -1,10 +1,11 @@
 import Lottie from "lottie-react";
 import colors from "../assets/colors.json";
 import styled from "styled-components";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 import github from '../assets/github.png'
 import linkedin from '../assets/linkedin.png'
+import { Link } from 'react-scroll';
 
 const Container = styled.header`
   width: 40%;
@@ -27,6 +28,20 @@ const Container = styled.header`
     height: 60%;
     gap: 15px;
     flex-direction: column;
+    div{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span{
+        display: none;
+      }
+    }
+    h3{
+      &:hover{
+        color: #91B797;
+        transition: color .3s ease-in-out;
+      }
+    }
   }
   .social-media{
     /* border: 5px solid red; */
@@ -39,13 +54,32 @@ const Container = styled.header`
       opacity: 0.5;
     }
   }
+  #${(props) => (props.id)}{
+    display: ${(props) => (props.id? 'block' : '')};
+    background: #91B797;
+    height: 3px;
+    margin-bottom: 3px;
+    animation-name: spanWidth;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  @keyframes spanWidth {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50px;
+    }
+  }
 `
 
 export const Header = () => {
   const { language } = useContext(GlobalContext)
+  const [menuCliked, setMenuCliked] = useState(false)
 
   return (
-    <Container>
+    <Container id={menuCliked}>
       <div className="title">
         <Lottie animationData={colors} loop={true} style={{ height: 60, overflowY: "hidden" }} />
         <span>
@@ -53,21 +87,24 @@ export const Header = () => {
           {language === '/pt' ? <p>Desenvolvedora Web Full Stack</p> : <p>Web Full Stack Desenveloper</p>}
         </span>
       </div>
-      {language === '/pt' ?
         <div className="menu">
-          <h3>Sobre mim</h3>
-          <h3>Experiência</h3>
-          <h3>Projetos</h3>
-          <h3>Contato</h3>
+          <div>
+            <span id="btn-1"></span>
+            <Link onClick={() => setMenuCliked("btn-1")} to="about" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Sobre mim' : 'About'}</h3></Link>
+          </div>
+          <div>
+            <span id="btn-2"></span>
+            <Link onClick={() => setMenuCliked("btn-2")} to="experience" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Experiência' : 'Experience'}</h3></Link>
+          </div>
+          <div>
+            <span id="btn-3"></span>
+            <Link onClick={() => setMenuCliked("btn-3")} to="projects" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Projetos' : 'Projects'}</h3></Link>
+          </div>
+          <div>
+            <span id="btn-4"></span>
+            <Link onClick={() => setMenuCliked("btn-4")} to="contact" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Contato' : 'Contact'}</h3></Link>
+          </div>
         </div>
-        :
-        <div className="menu">
-          <h3>About</h3>
-          <h3>Experience</h3>
-          <h3>Projects</h3>
-          <h3>Contact</h3>
-        </div>
-      }
       <div className="social-media">
         <a href="https://github.com/laisrmacedo"><img src={github}/></a>
         {language === '/pt' ?

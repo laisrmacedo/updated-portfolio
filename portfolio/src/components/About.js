@@ -18,7 +18,7 @@ export const About = () => {
   const { language } = useContext(GlobalContext)
 
   return(
-    <Container>
+    <Container id="about">
       <div>
         <span onClick={() => setTextSize(0)} className="smallBtn">{language === '/pt'? 'Curto' : 'Short'}</span>
         <span onClick={() => setTextSize(1)} className="smallBtn">{language === '/pt'? 'Longo' : 'Long'}</span>
