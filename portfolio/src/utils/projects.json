@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "titlePT": "Labeddit",
+    "titleEN": "Labeddit",
+    "descriptionPT": "Rede social na qual os usuários podem divulgar conteúdo e interagir de forma positiva ou negativa em publicações.",
+    "descriptionEN": "Social network in which users can share content and interact positively or negatively in publications.",
+    "deploy": "https://labeddit-laisrmacedo.surge.sh/users/login",
+    "repository": "https://github.com/laisrmacedo/labeddit-frontend",
+    "image": "",
+    "tools": ["react", "typescript", "styled-components", "node.js", "SQL", "Express.js"],
+    "category": "full stack",
+    "endedPT": "abril 2023",
+    "endedEN": "april 2023"
+  },
+  {
+    "id": 2,
+    "titlePT": "Pokédex",
+    "titleEN": "Pokédex",
+    "descriptionPT": "Aplicação web que permite aos usuários visualizar todos os Pokémons existentes e suas informações, além de 'capturar' aqueles que tiver interesse.",
+    "descriptionEN": "Web application that allows users to view all existing Pokémon and their information, as well as 'capture' the ones they are interested in.",
+    "deploy": "https://pokedex.built.by.laismacedo.surge.sh",
+    "repository": "https://github.com/laisrmacedo/Pokedex/tree/main/site-de-pokemons",
+    "image": "",
+    "tools": ["react", "javascript", "CSS", "styled-components", "API"],
+    "category": "front end",
+    "endedPT": "janeiro 2023",
+    "endedEN": "january 2023"
+  },
+  {
+    "id": 3,
+    "titlePT": "Labook",
+    "titleEN": "Labook",
+    "descriptionPT": "Backend para rede social que tem o objetivo de promover a conexão e interação entre pessoas.",
+    "descriptionEN": "Backend for social network that aims to promote connection and interaction between people.",
+    "deploy": "https://documenter.getpostman.com/view/24460805/2s93CRJWGq",
+    "repository": "https://github.com/laisrmacedo/labook-backend",
+    "image": "",
+    "tools": ["Node.js", "typescript", "express.js", "SQL", "Postman"],
+    "category": "back end",
+    "endedPT": "fevereiro 2023",
+    "endedEN": "february 2023"
+  }
+]

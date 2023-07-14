@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { ConfigureScreen } from "./ConfigureScreen";
 import { About } from "./About";
 import { Experience } from "./Experience";
+import { Projects } from "./Projects";
 
 const Container = styled.main`
   width: 60%;
@@ -32,6 +33,7 @@ export const Main = () => {
       <nav>
         <About></About>
         <Experience></Experience>
+        <Projects></Projects>
       </nav>
     </Container>
   )

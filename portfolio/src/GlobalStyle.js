@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
-    background:  ${(props) => (props.currentTheme ? '#fff' : '#485C6D')};
+    background:  ${(props) => (props.currentTheme ? '#fff' : '#33414d')};
     color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
     transition: background 1s ease-in-out;
 
@@ -77,9 +77,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .skill{
-    background:  ${(props) => (props.currentTheme ? '#F9F3EB8a' : '#50677A')};
+    background:  ${(props) => (props.currentTheme ? '#F9F3EB8a' : '#50677A5a')};
     font-variant: all-small-caps;
-    padding: 2px 12px;
+    padding: 0px 12px;
     border-radius: 12px;
     font-size: 14px;
     color: ${(props) => (props.currentTheme ? '#485C6D' : '#C4C7AC')};

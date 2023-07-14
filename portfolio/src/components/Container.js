@@ -17,8 +17,8 @@ const Content = styled.div`
     height: 100%;
     max-width: 1200px;
     /* margin: 0 auto; */
-    -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1); 
-    box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);
+    /* -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);  */
+    /* box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.03); */
     display: flex;
     /* border: 5px solid red; */
   }

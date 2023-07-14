@@ -20,9 +20,6 @@ const Container = styled.header`
     display: flex;
     align-items: center;
     gap: 15px;
-    h1{
-      margin-bottom: 8px;
-    }
   }
   .menu{
     display: flex;
