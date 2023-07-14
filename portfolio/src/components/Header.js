@@ -16,11 +16,10 @@ const Container = styled.header`
 
   @media screen and (max-width: ${(props) => (props.bp + 'px')}){
     width: 100%;
-    height: 40%;
+    height: 20%;
     flex-direction: row;
     justify-content: center;
     padding: 20px 0;
-    /* border: 1px solid red; */
   }
   
   .title{
@@ -29,8 +28,9 @@ const Container = styled.header`
     align-items: center;
     gap: 15px;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      /* border: 1px solid red; */
       height: 100%;
-      width:100%;
+      max-width: 100vw;
       justify-content: center;
       min-height: 65px;
       h1{

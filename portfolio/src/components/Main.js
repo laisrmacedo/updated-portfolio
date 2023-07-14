@@ -14,8 +14,9 @@ const Container = styled.main`
 
   @media screen and (max-width: ${(props) => (props.bp + 'px')}){
     width: 100%;
-    height: 90%;
+    height: 80%;
     padding: 0 0 0 40px;
+    /* border: 1px solid red; */
   }
 
   >nav{
@@ -23,6 +24,9 @@ const Container = styled.main`
     overflow-y: auto;
     margin-top: 36px;
     padding-right: 40px;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      margin-top: 10px;
+    }
   }
 `
 
