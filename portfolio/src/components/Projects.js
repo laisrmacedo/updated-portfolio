@@ -88,7 +88,7 @@ const Container = styled.section`
   }
 `
 export const Projects = () => {
-  const { mobileBreakPoint } = useContext(GlobalContext)
+  const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
   // fetch('https://api.github.com/users/laisrmacedo/repos')
   // .then(response => response.json())
   // .then(data => {
@@ -110,14 +110,14 @@ export const Projects = () => {
             <div className="container-info-project">
               <div className="title">
                 <span>
-                  <h3>{project.titleEN}</h3>&bull;<p>{project.category}</p>
+                  <h3>{language === defaultLanguage?  project.titlePT : project.titleEN}</h3>&bull;<p>{project.category}</p>
                 </span>
                 <span>
                   <h5><a href={project.deploy}>&uarr;</a></h5>
                   <a href={project.repository}>&#128193;</a>
                 </span>
               </div>
-              <p>{project.descriptionEN}</p>
+              <p>{language === defaultLanguage?  project.descriptionPT : project.descriptionEN}</p>
               <span>
                 {project.tools.map((skill, i) => <p key={i} className="skill">{skill}</p>)}
               </span>
