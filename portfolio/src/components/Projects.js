@@ -31,25 +31,47 @@ const Container = styled.section`
       object-fit: contain;
       height: 100%;
       width: 100%;
-      opacity: 0.7;
+      opacity: 0.6;
     }
   }
   
-  .title{
+  .container-info-project{
     padding: 20px 40px 20px 60px;
-    /* border: 1px solid #7CA1BF6a; */
-     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     margin: 10px 0 10px 40px;
     gap: 12px;
-    span{
-      width: 100%;
+    
+    >span{
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+  }
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    p{
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+    span{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      a{
+        text-decoration: none;
+      }
+      h5{
+        transform: rotate(45deg);
+        font-size: 16px;
+      }
     }
   }
 `
@@ -66,19 +88,28 @@ export const Projects = () => {
   // });
   return(
     <Container>
-      {projects.map((project) => {
+      {projects.map((project, i) => {
         return(
-          <div>
-          <span className="project-logo">
-            <img src={project.image}/>
-          </span>
-            <div className="title">
-              <span>
-                <h3>{project.titleEN}</h3>
-              </span>
+          <div key={i}>
+            <span className="project-logo">
+              <img src={project.image}/>
+            </span>
+            <div className="container-info-project">
+              <div className="title">
+                <span>
+                  <h3>{project.titleEN}</h3>&bull;<p>{project.category}</p>
+                </span>
+                <span>
+                  <h5><a href={project.deploy}>&uarr;</a></h5>
+                  <a href={project.repository}>&#128193;</a>
+                </span>
+              </div>
               <p>{project.descriptionEN}</p>
+              <span>
+                {project.tools.map((skill, i) => <p key={i} className="skill">{skill}</p>)}
+              </span>
             </div>
-        </div>
+          </div>
         )
       })}
     </Container>
