@@ -10,9 +10,9 @@ function App() {
   
   const language = window.location.pathname
   const defaultLanguage = "/pt"
-  const BASE_URL = 'http://localhost:3000'
   const mobileBreakPoint = 480
-  // const BASE_URL = 'http://laisrmacedo.vercel.app'
+  // const BASE_URL = 'http://localhost:3000'
+  const BASE_URL = 'http://laisrmacedo.vercel.app'
   const [currentTheme, setCurrentTheme] = useState(false || JSON.parse(localStorage.getItem("theme")))
   
   useEffect(()=>{

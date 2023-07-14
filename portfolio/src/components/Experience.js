@@ -9,6 +9,10 @@ const Container = styled.section`
   gap: 36px;
   >div{
     display: flex;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      flex-direction: column;
+      gap: 20px;
+    }
 
     >p{
       font-size: 11px;
@@ -76,20 +80,20 @@ const Container = styled.section`
 `
 
 export const Experience = () => {
-  const { language } = useContext(GlobalContext)
+  const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
   const [openDiv, setOpenDiv] = useState(false)
 
   return(
-    <Container id="experience" open={openDiv}>
+    <Container id="experience" open={openDiv} bp={mobileBreakPoint}>
       {experiences.map((i, index) => {
         return(
           <div key={index}>
-            <p>{language === '/pt' ? i.timePT : i.timeEN}</p>
+            <p>{language === defaultLanguage ? i.timePT : i.timeEN}</p>
             <div className="info">
               <span>
-                <h3>{language === '/pt' ? i.titlePT : i.titleEN}</h3>&bull;<p>{i.company}</p>
+                <h3>{language === defaultLanguage ? i.titlePT : i.titleEN}</h3>&bull;<p>{i.company}</p>
               </span>
-              <p>{language === '/pt' ? i.descriptionPT : i.descriptionEN}</p>
+              <p>{language === defaultLanguage ? i.descriptionPT : i.descriptionEN}</p>
               <span>
                 {i.skills.map((skill, i) => <p key={i} className="skill">{skill}</p>)}
               </span>
@@ -99,14 +103,14 @@ export const Experience = () => {
       })}
       <div className="allSkills">
         <div onClick={() => setOpenDiv(!openDiv)}>
-          <h3>{language === '/pt' ? "Minhas Habilidades" : "All Skills"}</h3>
+          <h3>{language === defaultLanguage ? "Minhas Habilidades" : "All Skills"}</h3>
           <span id="rotateBtn">
             <p style={{transform: 'rotate(45deg)'}}>|</p>
             <p style={{transform: 'rotate(-45deg)'}}>|</p>
           </span>
         </div>
         <span id="skillsContainer">
-          {language === '/pt' ? 
+          {language === defaultLanguage ? 
             skills.pt.map((skill, i) => <p key={i} className="skill">{skill}</p>)
           : skills.en.map((skill, i) => <p key={i} className="skill">{skill}</p>)}
         </span>

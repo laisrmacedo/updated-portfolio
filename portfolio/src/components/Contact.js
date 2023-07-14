@@ -11,6 +11,7 @@ const Container = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   
   .background{
     width: 100%;
@@ -50,19 +51,16 @@ const Container = styled.section`
     align-items: center;
     justify-content: center;
     height: 80px;
-    font-size: 40px;
+    font-size: min(6vw, 40px);
     font-weight: 900;
+    text-align: center;
     text-transform: uppercase;
     background: linear-gradient(20deg, #7CA1BF, #C4C7AC, #5A8279, #91B797);
     background-size: 200% 100%;
-    animation: degrade 3s linear infinite alternate;
+    animation: degrade 2s linear infinite alternate;
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
-      font-size: 30px;
-      text-align: center;
-    }
   }
 
   @keyframes degrade{
@@ -87,6 +85,9 @@ const Container = styled.section`
       background: transparent;
       max-width: 80px;
       filter: brightness(0.8);
+      @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+        max-width: 50px;
+      }
     }
   }
 
@@ -103,12 +104,12 @@ export const Contact = () => {
         {language === defaultLanguage ? 
           <>
             <span id="degrade">Comece uma conversa</span>
-            <p>Se você precisa de uma página web personalizada, deseja compartilhar ideias ou simplesmente quer conhecer o meu trabalho, sinta-se à vontade para entrar em contato comigo e retornarei o mais breve possível.</p>
+            <p>Se você precisa de uma página web personalizada, deseja compartilhar ideias ou quer conhecer o meu trabalho, sinta-se à vontade para entrar em contato comigo e retornarei o mais breve possível.</p>
           </>
           :
           <>
             <span id="degrade">start a conversation</span>
-            <p>If you need a customized web page, want to share ideas, or simply want to get to know my work, feel free to contact me, and I will get back to you as soon as possible.</p>
+            <p>If you need a customized web page, want to share ideas or want to get to know my work, feel free to contact me and I will get back to you as soon as possible.</p>
           </>
         }
         <span className="social-contact">

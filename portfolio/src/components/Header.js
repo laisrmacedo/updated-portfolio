@@ -30,6 +30,12 @@ const Container = styled.header`
     gap: 15px;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
       height: 100%;
+      h1{
+        font-size: min(6vw, 32px)
+      }
+      p{
+        font-size: min(4vw, 16px)
+      }
     }
   }
   .menu{
