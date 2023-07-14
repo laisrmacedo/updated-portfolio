@@ -27,7 +27,7 @@ const Container = styled.section`
   }
   
   .content{
-    /* border: 1px solid red;s */
+    /* border: 1px solid red; */
     position: absolute;
     padding: 30px;
     max-width: 90%;
@@ -37,6 +37,10 @@ const Container = styled.section`
       background: transparent;
       text-align: center;
       padding: 0 50px;
+      @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+        padding: 0;
+        margin-top: 20px;
+      }
     }
 
   }
@@ -55,6 +59,10 @@ const Container = styled.section`
     
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      font-size: 30px;
+      text-align: center;
+    }
   }
 
   @keyframes degrade{
@@ -87,7 +95,7 @@ export const Contact = () => {
   const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
 
   return(
-    <Container id="contact">
+    <Container id="contact" bp={mobileBreakPoint}>
       <div className="background">
         <img src={background}/>
       </div>

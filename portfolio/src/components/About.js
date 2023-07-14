@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalContext"
-import FadeIn from "./transitions/FadeIn";
 
 
 const Container = styled.section`
@@ -23,7 +22,6 @@ export const About = () => {
         <span onClick={() => setTextSize(0)} className="smallBtn">{language === '/pt'? 'Curto' : 'Short'}</span>
         <span onClick={() => setTextSize(1)} className="smallBtn">{language === '/pt'? 'Longo' : 'Long'}</span>
       </div>
-      <FadeIn textSize={textSize}>
         {language === '/pt' ?
           (textSize === 0 ? <p>Desenvolvedora Web Full Stack formada pelo bootcamp de Programação da Labenu, onde desenvolvi habilidades técnicas de frontend e backend. Entre meus conhecimentos, posso destacar JavaScript, TypeScript, React, NodeJS, SQL e Jest. Graduada em Engenharia Civil, vivenciei experiências acadêmicas e profissionais em canteiro de obra e escritório de projetos, o que aprimorou habilidades como a comunicação eficiente, gestão de tempo, criticidade e trabalho em equipe.</p>
           :
@@ -49,7 +47,6 @@ export const About = () => {
           </>
           )
         }
-      </FadeIn>
     </Container>
   )
 }
