@@ -28,7 +28,7 @@ export const Footer = () => {
         </>
         :
         <>
-          <p>Coded in Visual Studio Code by yours truly. Built with React and deployed with Vercel. All text is set in font<a href="https://fonts.google.com/specimen/Josefin+Sans?query=jose">Josefin Sans</a></p>
+          <p>Coded in Visual Studio Code by yours truly. Built with React and deployed with Vercel. All text is set in font <a href="https://fonts.google.com/specimen/Josefin+Sans?query=jose">Josefin Sans</a></p>
           <p>Animated header image created by Myriade - <a href="https://lottiefiles.com/animations/waves-in-gradient-1-gKtmMPeAUx">LottieFiles</a></p>
         </>
       }
