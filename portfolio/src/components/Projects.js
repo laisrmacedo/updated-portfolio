@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import projects from "../utils/projects.json"
+import { GlobalContext } from "../context/GlobalContext";
+import { useContext } from "react";
 
 const Container = styled.section`
   width: 100%;
@@ -25,8 +27,8 @@ const Container = styled.section`
     z-index: 2;
     overflow-y: hidden;
     background-color: transparent;
-    @media screen and (max-width: 481px){
-      width: 100%;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      display: none;
     }
     img{
       object-fit: contain;
@@ -44,6 +46,11 @@ const Container = styled.section`
     flex-direction: column;
     margin: 10px 0 10px 40px;
     gap: 12px;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      margin: 10px;
+      padding: 20px 30px;
+      width: 100%;
+    }
     
     >span{
       display: flex;
@@ -81,6 +88,7 @@ const Container = styled.section`
   }
 `
 export const Projects = () => {
+  const { mobileBreakPoint } = useContext(GlobalContext)
   // fetch('https://api.github.com/users/laisrmacedo/repos')
   // .then(response => response.json())
   // .then(data => {
@@ -92,7 +100,7 @@ export const Projects = () => {
   //   console.error('Erro:', error);
   // });
   return(
-    <Container id="projects">
+    <Container id="projects" bp={mobileBreakPoint}>
       {projects.map((project, i) => {
         return(
           <div key={i}>

@@ -3,24 +3,34 @@ import colors from "../assets/colors.json";
 import styled from "styled-components";
 import { useContext, useState } from "react";
 import { GlobalContext } from "../context/GlobalContext";
-import github from '../assets/github.png'
-import linkedin from '../assets/linkedin.png'
 import { Link } from 'react-scroll';
+import { SocialMedia } from "./SocialMedia";
 
 const Container = styled.header`
   width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 40px;
-  
+
+  @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+    width: 100%;
+    height: 40%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
+    /* border: 1px solid red; */
+  }
+
   .title{
     height: 10%;
     display: flex;
     align-items: center;
     gap: 15px;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      height: 100%;
+    }
   }
   .menu{
     display: flex;
@@ -28,6 +38,9 @@ const Container = styled.header`
     height: 60%;
     gap: 15px;
     flex-direction: column;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      display: none;
+    }
     div{
       display: flex;
       align-items: center;
@@ -43,17 +56,7 @@ const Container = styled.header`
       }
     }
   }
-  .social-media{
-    /* border: 5px solid red; */
-    height: 10%;
-    display: flex;
-    align-items: end;
-    gap: 8px;
-    img{
-      height: 25px;
-      opacity: 0.5;
-    }
-  }
+
   #${(props) => (props.id)}{
     display: ${(props) => (props.id? 'block' : '')};
     background: #91B797;
@@ -72,47 +75,49 @@ const Container = styled.header`
       width: 50px;
     }
   }
+
+  .hidden{
+    display: flex;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      display: none;
+    }
+  }
 `
 
 export const Header = () => {
-  const { language } = useContext(GlobalContext)
+  const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
   const [menuCliked, setMenuCliked] = useState(false)
 
   return (
-    <Container id={menuCliked}>
+    <Container id={menuCliked} bp={mobileBreakPoint}>
       <div className="title">
         <Lottie animationData={colors} loop={true} style={{ height: 60, overflowY: "hidden" }} />
         <span>
           <h1>Laís Rodrigues</h1>
-          {language === '/pt' ? <p>Desenvolvedora Web Full Stack</p> : <p>Web Full Stack Desenveloper</p>}
+          {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Web Full Stack Desenveloper</p>}
         </span>
       </div>
-        <div className="menu">
-          <div>
-            <span id="btn-1"></span>
-            <Link onClick={() => setMenuCliked("btn-1")} to="about" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Sobre mim' : 'About'}</h3></Link>
-          </div>
-          <div>
-            <span id="btn-2"></span>
-            <Link onClick={() => setMenuCliked("btn-2")} to="experience" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Experiência' : 'Experience'}</h3></Link>
-          </div>
-          <div>
-            <span id="btn-3"></span>
-            <Link onClick={() => setMenuCliked("btn-3")} to="projects" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Projetos' : 'Projects'}</h3></Link>
-          </div>
-          <div>
-            <span id="btn-4"></span>
-            <Link onClick={() => setMenuCliked("btn-4")} to="contact" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === '/pt' ? 'Contato' : 'Contact'}</h3></Link>
-          </div>
+      <div className="menu">
+        <div>
+          <span id="btn-1"></span>
+          <Link onClick={() => setMenuCliked("btn-1")} to="about" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3></Link>
         </div>
-      <div className="social-media">
-        <a href="https://github.com/laisrmacedo"><img src={github}/></a>
-        {language === '/pt' ?
-          <a href="https://www.linkedin.com/in/laisrmacedo/"><img src={linkedin}/></a>
-          :
-          <a href="https://www.linkedin.com/in/laisrmacedo/?locale=en_US"><img src={linkedin}/></a>
-        }
+        <div>
+          <span id="btn-2"></span>
+          <Link onClick={() => setMenuCliked("btn-2")} to="experience" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Experiência' : 'Experience'}</h3></Link>
+        </div>
+        <div>
+          <span id="btn-3"></span>
+          <Link onClick={() => setMenuCliked("btn-3")} to="projects" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Projetos' : 'Projects'}</h3></Link>
+        </div>
+        <div>
+          <span id="btn-4"></span>
+          <Link onClick={() => setMenuCliked("btn-4")} to="contact" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Contato' : 'Contact'}</h3></Link>
+        </div>
       </div>
+      <span className="hidden">
+        <SocialMedia/>
+      </span>
     </Container>
   )
 }

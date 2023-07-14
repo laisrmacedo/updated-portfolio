@@ -16,11 +16,11 @@ const Content = styled.div`
     width: 100%;
     height: 100%;
     max-width: 1200px;
-    /* margin: 0 auto; */
-    /* -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.1);  */
     /* box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.03); */
     display: flex;
-    /* border: 5px solid red; */
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      flex-direction: column;
+    }
   }
   .error{
     justify-content: center;
@@ -29,12 +29,12 @@ const Content = styled.div`
   }
 `
 export const Container = () => {
-  const { language } = useContext(GlobalContext)
+  const { language, mobileBreakPoint } = useContext(GlobalContext)
 
   return(
-    <Content>
+    <Content bp={mobileBreakPoint}>
       {language === '/' || language === '/pt' || language === '/en'? 
-      <div>
+      <div className="content">
         <Header/>
         <Main/>
       </div>

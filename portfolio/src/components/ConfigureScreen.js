@@ -3,6 +3,7 @@ import { GlobalContext } from "../context/GlobalContext"
 import styled from "styled-components";
 import sun from '../assets/sun.png'
 import moon from '../assets/moon.png'
+import { SocialMedia } from "./SocialMedia";
 
 const Div = styled.div`
   width: 100%;
@@ -10,8 +11,22 @@ const Div = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 20px;
   padding-right: 40px;
+  @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+    justify-content: space-between;
+  }
+  
+  .hidden{
+    display: none;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      display: flex;
+    }
+  }
+  
+  .theme-language{
+    display: flex;
+    gap: 20px;
+  }
 
   img{
     height: 20px;
@@ -25,20 +40,25 @@ const Div = styled.div`
 `
 
 export const ConfigureScreen = () => {
-  const { language, defaultLanguage, currentTheme, setCurrentTheme, BASE_URL } = useContext(GlobalContext)
+  const { language, defaultLanguage, currentTheme, setCurrentTheme, BASE_URL, mobileBreakPoint } = useContext(GlobalContext)
 
   return(
-    <Div>
-      <span onClick={() => setCurrentTheme(!currentTheme)}>
-        {currentTheme ? <img src={sun}/> : <img src={moon}/>}
+    <Div bp={mobileBreakPoint}>
+      <span className="hidden">
+        <SocialMedia/>
       </span>
-      <p >
-        {language === defaultLanguage ? 
-          <a href={BASE_URL + '/en'}>EN</a>
-          : 
-          <a href={BASE_URL + '/pt'}>PT</a> 
-        }
-      </p>
+      <div className="theme-language">
+        <span onClick={() => setCurrentTheme(!currentTheme)}>
+          {currentTheme ? <img src={sun}/> : <img src={moon}/>}
+        </span>
+        <p >
+          {language === defaultLanguage ? 
+            <a href={BASE_URL + '/en'}>EN</a>
+            : 
+            <a href={BASE_URL + '/pt'}>PT</a> 
+          }
+        </p>
+      </div>
     </Div>
   )
 }
