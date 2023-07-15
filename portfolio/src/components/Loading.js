@@ -15,7 +15,7 @@ const Container = styled.div`
     align-items: center;
     gap: 15px;
     p{
-      font-size: 48px;
+      font-size: 44px;
       margin: 0px;
       line-height: 48px;
     }
@@ -29,7 +29,7 @@ export const Loading = () => {
     <Container>
       <div>
         <Lottie animationData={colors} loop={true} style={{height:100, width:100, overflowY: "hidden"}} />
-        {language === '/pt'? <p>Bem-vindo!</p> : language === '/en'? <p>Welcame!</p> : <p></p>}
+        {language === '/pt'? <p>Bem-vindo!</p> : language === '/en'? <p>Welcome!</p> : <p></p>}
       </div>
     </Container>
   )
