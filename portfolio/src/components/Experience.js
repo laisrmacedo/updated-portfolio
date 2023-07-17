@@ -7,8 +7,12 @@ import skills from "../utils/skills.json"
 
 const Container = styled.section`
   gap: 36px;
-  >div{
+  .experience-box{
     display: flex;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    margin: 10px;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
       flex-direction: column;
       gap: 20px;
@@ -31,15 +35,19 @@ const Container = styled.section`
       display: flex;
       flex-direction: column;
       gap: 12px;
+      a{
+        font-weight: 100;
+      }
     }
 
   .allSkills{
+    display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
     border: 1px solid #7CA1BF6a;
     padding: 16px;
-    margin-top: 20px;
+    margin: 20px 10px 0 10px;
     border-radius: 12px;
     
     h3{
@@ -87,11 +95,11 @@ export const Experience = () => {
     <Container id="experience" open={openDiv} bp={mobileBreakPoint}>
       {experiences.map((i, index) => {
         return(
-          <div key={index}>
+          <div className="experience-box" key={index}>
             <p>{language === defaultLanguage ? i.timePT : i.timeEN}</p>
             <div className="info">
               <span>
-                <h3>{language === defaultLanguage ? i.titlePT : i.titleEN}</h3>&bull;<p>{i.company}</p>
+                <h3>{language === defaultLanguage ? i.titlePT : i.titleEN}</h3>&bull;<p><a href={i.link}>{i.company}</a></p>
               </span>
               <p>{language === defaultLanguage ? i.descriptionPT : i.descriptionEN}</p>
               <span>

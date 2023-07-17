@@ -62,6 +62,14 @@ export const GlobalStyle = createGlobalStyle`
     text-align: justify;
   }
 
+  a{
+    text-decoration: none;
+    &:hover{
+      color: #91B797;
+      transition: color .3s ease-in-out;
+    }
+  }
+
   .smallBtn{
     background: ${(props) => (props.currentTheme ? '#F4E9DB' : '#5A8279')};
     border: none;
@@ -83,6 +91,11 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 12px;
     font-size: 14px;
     color: ${(props) => (props.currentTheme ? '#485C6D' : '#C4C7AC')};
+    cursor: default;
+    &:hover{
+      background: ${(props) => (props.currentTheme ? '#F4E9DB' : '#203647')};
+      transition: background .3s ease-in-out;
+    }
   }
 `
 

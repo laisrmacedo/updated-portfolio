@@ -5,50 +5,46 @@ import { useContext } from "react";
 
 const Container = styled.section`
   width: 100%;
-  gap: 20px;
+  gap: 36px;
 
   >div{
-    display: flex;
-    width: 100%;
     position: relative;
-    z-index: 1;
-    /* border: 1px solid blue; */
-    >div{
-      padding: 10px;
-      height: 100%;
-      width: 90%;
-    }
+    display: flex;
+    max-width: 100%;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
+    margin: 10px;
+    /* border: 1px solid red; */
   }
   
   .project-logo{
-    height: 100%;
-    width: 80px;
-    position: absolute;
-    z-index: 2;
+    min-height: 100%;
+    max-width: 110px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow-y: hidden;
     background-color: transparent;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
       display: none;
     }
     img{
-      object-fit: contain;
-      height: 100%;
+      /* height: 100%; */
       width: 100%;
       opacity: 0.6;
     }
   }
   
   .container-info-project{
-    padding: 20px 40px 20px 60px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.05);
-    border-radius: 12px;
+
     display: flex;
     flex-direction: column;
-    margin: 10px 0 10px 40px;
     gap: 12px;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
-      margin: 10px;
-      padding: 20px 30px;
+      /* margin: 10px;
+      padding: 20px 30px; */
       width: 100%;
     }
     
@@ -73,16 +69,15 @@ const Container = styled.section`
       align-items: center;
       gap: 12px;
       flex-wrap: wrap;
-      a{
-        text-decoration: none;
-        font-size: 16px;
-        &:hover{
-          font-size: 18px;
-          transition: font-size .3s ease-in-out;
-        }
-      }
       h5{
         transform: rotate(45deg);
+        a{
+          font-size: 16px;
+          &:hover{
+            font-size: 18px;
+            transition: font-size .3s ease-in-out;
+          }
+        }
       }
     }
   }
@@ -110,7 +105,7 @@ export const Projects = () => {
             <div className="container-info-project">
               <div className="title">
                 <span>
-                  <h3>{language === defaultLanguage?  project.titlePT : project.titleEN}</h3>&bull;<p>{project.category}</p>
+                  <h3><a href={project.deploy}>{language === defaultLanguage?  project.titlePT : project.titleEN}</a></h3>&bull;<p>{project.category}</p>
                 </span>
                 <span>
                   <h5><a href={project.deploy}>&uarr;</a></h5>
