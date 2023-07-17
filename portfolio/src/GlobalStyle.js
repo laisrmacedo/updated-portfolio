@@ -39,7 +39,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     margin: 20px 0 100px 0;
-    /* height: 100%; */
+    position: relative;
   }
 
   h1{
@@ -95,6 +95,26 @@ export const GlobalStyle = createGlobalStyle`
     &:hover{
       background: ${(props) => (props.currentTheme ? '#F4E9DB' : '#203647')};
       transition: background .3s ease-in-out;
+    }
+  }
+
+  .degrade{
+    background-color: transparent;
+    
+    background: linear-gradient(20deg, #7CA1BF, #C4C7AC, #5A8279, #91B797);
+    background-size: 200% 100%;
+    animation: effect 2s linear infinite alternate;
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes effect{
+    0%{
+      background-position: 0%;
+    }
+    100%{
+      background-position: 100%;
     }
   }
 `

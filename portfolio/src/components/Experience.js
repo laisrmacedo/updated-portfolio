@@ -7,6 +7,13 @@ import skills from "../utils/skills.json"
 
 const Container = styled.section`
   gap: 36px;
+
+  >h3{
+    display: none;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      display: flex;
+    }
+  }
   .experience-box{
     display: flex;
     padding: 20px;
@@ -93,6 +100,7 @@ export const Experience = () => {
 
   return(
     <Container id="experience" open={openDiv} bp={mobileBreakPoint}>
+      <h3 className="degrade">{language === defaultLanguage ? 'Experiência' : 'Experience'}</h3>
       {experiences.map((i, index) => {
         return(
           <div className="experience-box" key={index}>

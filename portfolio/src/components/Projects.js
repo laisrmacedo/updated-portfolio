@@ -6,6 +6,13 @@ import { useContext } from "react";
 const Container = styled.section`
   width: 100%;
   gap: 36px;
+  
+  >h3{
+    display: none;
+    @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+      display: flex;
+    }
+  }
 
   >div{
     position: relative;
@@ -96,6 +103,7 @@ export const Projects = () => {
   // });
   return(
     <Container id="projects" bp={mobileBreakPoint}>
+      <h3 className="degrade">{language === defaultLanguage ? 'Projetos' : 'Projects'}</h3>
       {projects.map((project, i) => {
         return(
           <div key={i}>

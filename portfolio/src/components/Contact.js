@@ -45,8 +45,8 @@ const Container = styled.section`
     }
 
   }
-  #degrade{
-    background-color: transparent;
+
+  .invite{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,22 +55,8 @@ const Container = styled.section`
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
-    background: linear-gradient(20deg, #7CA1BF, #C4C7AC, #5A8279, #91B797);
-    background-size: 200% 100%;
-    animation: degrade 2s linear infinite alternate;
-    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
-  @keyframes degrade{
-    0%{
-      background-position: 0%;
-    }
-    100%{
-      background-position: 100%;
-    }
-  }
   .social-contact{
     background: transparent;
     display: flex;
@@ -103,12 +89,12 @@ export const Contact = () => {
       <div className="content">
         {language === defaultLanguage ? 
           <>
-            <span id="degrade">Comece uma conversa</span>
+            <span className="degrade invite">Comece uma conversa</span>
             <p>Se você precisa de uma página web personalizada, deseja compartilhar ideias ou quer conhecer o meu trabalho, sinta-se à vontade para entrar em contato comigo e retornarei o mais breve possível.</p>
           </>
           :
           <>
-            <span id="degrade">start a conversation</span>
+            <span className="degrade invite">start a conversation</span>
             <p>If you need a customized web page, want to share ideas or want to get to know my work, feel free to contact me and I will get back to you as soon as possible.</p>
           </>
         }

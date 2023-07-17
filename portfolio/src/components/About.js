@@ -6,10 +6,21 @@ import { GlobalContext } from "../context/GlobalContext"
 
 const Container = styled.section`
   gap: 20px;
+
   >div{
     display: flex;
     justify-content: end;
+    align-items: center;
     gap: 16px;
+    position: sticky;
+    top: 0;
+    h3{
+      display: none;
+      @media screen and (max-width: ${(props) => (props.bp + 'px')}){
+        display: flex;
+        margin-right: auto;
+      }
+    }
   }
 
   span{
@@ -38,11 +49,12 @@ const PhotoBox = styled.span`
 
 export const About = () => {
   const [textSize, setTextSize] = useState(0)
-  const { language } = useContext(GlobalContext)
+  const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
 
   return(
-    <Container id="about">
+    <Container id="about" bp={mobileBreakPoint}>
       <div>
+        <h3 className="degrade">{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3>
         <button onClick={() => setTextSize(0)} className="smallBtn">{language === '/pt'? 'Curto' : 'Short'}</button>
         <button onClick={() => setTextSize(1)} className="smallBtn">{language === '/pt'? 'Longo' : 'Long'}</button>
       </div>
