@@ -2,8 +2,9 @@ import styled from "styled-components";
 import background from  "../assets/contact-background.jpeg"
 import whatsapp from  "../assets/whatsapp.png"
 import email from  "../assets/email.png"
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { GlobalContext } from "../context/GlobalContext";
+import { useScrollObserver } from "../hooks/useScrollObserver";
 
 const Container = styled.section`
   position: relative;
@@ -80,9 +81,11 @@ const Container = styled.section`
 `
 export const Contact = () => {
   const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
-
+  
+  const targetRef = useRef(null);
+  useScrollObserver(targetRef);
   return(
-    <Container id="contact" bp={mobileBreakPoint}>
+    <Container id="contact" bp={mobileBreakPoint} ref={targetRef}>
       <div className="background">
         <img src={background}/>
       </div>

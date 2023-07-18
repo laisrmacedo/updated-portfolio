@@ -1,8 +1,9 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalContext"
 import experiences from "../utils/experience.json"
 import skills from "../utils/skills.json"
+import { useScrollObserver } from "../hooks/useScrollObserver";
 
 
 const Container = styled.section`
@@ -98,8 +99,11 @@ export const Experience = () => {
   const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
   const [openDiv, setOpenDiv] = useState(false)
 
+  const targetRef = useRef(null);
+  useScrollObserver(targetRef);
+
   return(
-    <Container id="experience" open={openDiv} bp={mobileBreakPoint}>
+    <Container id="experience" open={openDiv} bp={mobileBreakPoint} ref={targetRef}>
       <h3 className="degrade">{language === defaultLanguage ? 'Experiência' : 'Experience'}</h3>
       {experiences.map((i, index) => {
         return(

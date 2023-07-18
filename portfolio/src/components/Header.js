@@ -67,8 +67,8 @@ const Container = styled.header`
     }
   }
 
-  #${(props) => (props.id)}{
-    display: ${(props) => (props.id? 'block' : '')};
+  #${(props) => ("btn-"+ props.id)}{
+    display: ${(props) => ("btn-"+ props.id? 'block' : '')};
     background: #91B797;
     height: 3px;
     margin-bottom: 3px;
@@ -95,11 +95,10 @@ const Container = styled.header`
 `
 
 export const Header = () => {
-  const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
-  const [menuCliked, setMenuCliked] = useState(false)
+  const { language, defaultLanguage, mobileBreakPoint, visibleId, setVisibleId } = useContext(GlobalContext)
 
   return (
-    <Container id={menuCliked} bp={mobileBreakPoint}>
+    <Container id={visibleId} bp={mobileBreakPoint}>
       <div className="title">
         <Lottie animationData={colors} loop={true} style={{ height: 60, overflowY: "hidden" }} />
         <span>
@@ -109,20 +108,20 @@ export const Header = () => {
       </div>
       <div className="menu">
         <div>
-          <span id="btn-1"></span>
-          <Link onClick={() => setMenuCliked("btn-1")} to="about" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3></Link>
+          <span id="btn-about"></span>
+          <Link to="about" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3></Link>
         </div>
         <div>
-          <span id="btn-2"></span>
-          <Link onClick={() => setMenuCliked("btn-2")} to="experience" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Experiência' : 'Experience'}</h3></Link>
+          <span id="btn-experience"></span>
+          <Link to="experience" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Experiência' : 'Experience'}</h3></Link>
         </div>
         <div>
-          <span id="btn-3"></span>
-          <Link onClick={() => setMenuCliked("btn-3")} to="projects" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Projetos' : 'Projects'}</h3></Link>
+          <span id="btn-projects"></span>
+          <Link to="projects" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Projetos' : 'Projects'}</h3></Link>
         </div>
         <div>
-          <span id="btn-4"></span>
-          <Link onClick={() => setMenuCliked("btn-4")} to="contact" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Contato' : 'Contact'}</h3></Link>
+          <span id="btn-contact"></span>
+          <Link to="contact" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Contato' : 'Contact'}</h3></Link>
         </div>
       </div>
       <span className="hidden">

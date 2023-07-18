@@ -1,7 +1,8 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import styled from "styled-components";
 import myself from "../assets/myself.png";
 import { GlobalContext } from "../context/GlobalContext"
+import { useScrollObserver } from "../hooks/useScrollObserver";
 
 
 const Container = styled.section`
@@ -51,8 +52,11 @@ export const About = () => {
   const [textSize, setTextSize] = useState(0)
   const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
 
+  const targetRef = useRef(null);
+  useScrollObserver(targetRef);
+
   return(
-    <Container id="about" bp={mobileBreakPoint}>
+    <Container id="about" bp={mobileBreakPoint} ref={targetRef}>
       <div>
         <h3 className="degrade">{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3>
         <button onClick={() => setTextSize(0)} className="smallBtn">{language === '/pt'? 'Curto' : 'Short'}</button>

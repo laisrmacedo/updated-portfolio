@@ -14,7 +14,8 @@ function App() {
   // const BASE_URL = 'http://localhost:3000'
   const BASE_URL = 'http://laisrmacedo.vercel.app'
   const [currentTheme, setCurrentTheme] = useState(false || JSON.parse(localStorage.getItem("theme")))
-  
+  const [visibleId, setVisibleId] = useState("btn-about");
+
   useEffect(()=>{
     localStorage.setItem("theme", currentTheme)
   },[currentTheme])
@@ -25,7 +26,9 @@ function App() {
     currentTheme,
     setCurrentTheme,
     BASE_URL,
-    mobileBreakPoint
+    mobileBreakPoint,
+    visibleId,
+    setVisibleId
   }
 
   return (

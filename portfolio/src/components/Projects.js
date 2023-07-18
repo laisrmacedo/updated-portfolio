@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import projects from "../utils/projects.json"
 import { GlobalContext } from "../context/GlobalContext";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
+import { useScrollObserver } from "../hooks/useScrollObserver";
+// import 
 
 const Container = styled.section`
   width: 100%;
@@ -91,6 +93,11 @@ const Container = styled.section`
 `
 export const Projects = () => {
   const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
+  
+  const targetRef = useRef(null);
+  useScrollObserver(targetRef);
+  
+
   // fetch('https://api.github.com/users/laisrmacedo/repos')
   // .then(response => response.json())
   // .then(data => {
@@ -102,7 +109,8 @@ export const Projects = () => {
   //   console.error('Erro:', error);
   // });
   return(
-    <Container id="projects" bp={mobileBreakPoint}>
+    <Container id="projects" bp={mobileBreakPoint} ref={targetRef}>
+      {/* {console.log(isVisible)} */}
       <h3 className="degrade">{language === defaultLanguage ? 'Projetos' : 'Projects'}</h3>
       {projects.map((project, i) => {
         return(
