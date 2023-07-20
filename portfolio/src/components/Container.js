@@ -6,11 +6,12 @@ import { Main } from "./Main";
 
 const Content = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
+  /* border: 1px solid blue; */
   
   >div{
     width: 100%;
@@ -32,7 +33,7 @@ export const Container = () => {
   const { language, mobileBreakPoint } = useContext(GlobalContext)
 
   return(
-    <Content bp={mobileBreakPoint}>
+    <Content id="container" bp={mobileBreakPoint}>
       {language === '/' || language === '/pt' || language === '/en'? 
       <div className="content">
         <Header/>

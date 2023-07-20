@@ -5,15 +5,14 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
-    background:  ${(props) => (props.currentTheme ? '#fff' : '#33414d')};
     color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
     transition: background 1s ease-in-out;
 
     ::-webkit-scrollbar-track {
-      /* background: #000;  */
+      background: #000; 
     };
     ::-webkit-scrollbar{
       width: 8px;
@@ -30,8 +29,12 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  body{
-    overflow-y: hidden;
+  #home-screen{
+    background:  ${(props) => (props.currentTheme ? 'rgb(255, 255, 255, .7)' : 'rgb(51, 65, 77, .8)')};
+  }
+
+  #container{
+    background:  ${(props) => (props.currentTheme ? '#fff' : '#33414d')};
   }
 
   section{
@@ -117,10 +120,40 @@ export const GlobalStyle = createGlobalStyle`
       background-position: 100%;
     }
   }
+
+  #loom-companion-mv3{
+    display: none;
+  }
 `
 
 export const AppContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  #background-homescreeen{
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    img{
+      position: relative;
+      top: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #main-content{
+    overflow-y: auto;
+    position: relative;
+    top: 1;
+  }
 `
