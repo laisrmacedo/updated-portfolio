@@ -47,7 +47,7 @@ export const ConfigureScreen = (props) => {
       </span>
       <div className="theme-language">
         <span onClick={() => setCurrentTheme(!currentTheme)}>
-          {currentTheme ? <img className="sun"src={sun}/> : <img src={moon}/>}
+          {currentTheme ? <img className="moon" src={moon}/> : <img src={sun}/>}
         </span>
         <p >
           {language === defaultLanguage ? 

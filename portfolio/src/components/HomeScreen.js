@@ -30,7 +30,7 @@ const Container = styled.div`
 
   button{
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #fffaeb;
     padding: 12px 28px 12px 12px;
     border-radius: 4px;
     font-weight: 100;
@@ -91,8 +91,8 @@ const Container = styled.div`
       }
     }
     span{
-      .sun{
-        filter: invert(1);
+      .moon{
+        filter: brightness(5);
       }
     }
     .hidden{

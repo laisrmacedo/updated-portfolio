@@ -121,6 +121,7 @@ export const GlobalStyle = createGlobalStyle`
     backdrop-filter: ${(props) => (props.currentTheme ? 'blur(5px)' : 'blur(2px)')};
     color: #fffaeb;
     background:  ${(props) => (props.currentTheme ? 'rgba(150,150,150, .5)' : 'rgb(51, 65, 77, .8)')};
+    transition: background 1s ease-in-out;
     button, a{
       color: #fffaeb;
     }
