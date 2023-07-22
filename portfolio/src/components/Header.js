@@ -15,15 +15,17 @@ const Container = styled.header`
   padding: 40px;
 
   @media screen and (max-width: ${(props) => (props.bp + 'px')}){
-    width: 100%;
-    height: 20%;
+    width: 80%;
+    height: 100px;
     flex-direction: row;
-    /* justify-content: center; */
-    padding: 20px 40px;
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    /* border: 1px solid red; */
   }
   
   .title{
-    height: 10%;
+    height: 90px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -31,7 +33,6 @@ const Container = styled.header`
       height: 100%;
       min-height: 50px;
       >div{
-        /* border: 1px solid red; */
         max-width: 50px;
       }
       h1{
@@ -99,14 +100,19 @@ export const Header = () => {
 
   return (
     <Container id={visibleId} bp={mobileBreakPoint}>
-      <div className="title">
-        <Lottie animationData={colors} loop={true} style={{ height: 60, overflowY: "hidden" }} />
-        <span>
-          <h1>Laís Rodrigues</h1>
-          {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Web Full Stack Desenveloper</p>}
-        </span>
-      </div>
+      <Link to="home-screen" smooth={true} duration={1800} >
+        <div className="title">
+          <Lottie animationData={colors} loop={true} style={{ height: 60, overflowY: "hidden" }} />
+            <span>
+              <h1>Laís Rodrigues</h1>
+              {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Web Full Stack Desenveloper</p>}
+            </span>
+        </div>
+      </Link>
       <div className="menu">
+        <div>
+          <Link to="home-screen" smooth={true} duration={1800} ><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Início' : 'Home'}</h3></Link>
+        </div>
         <div>
           <span id="btn-about"></span>
           <Link to="about" smooth={true} duration={500} containerId="navContainer"><h3 style={{cursor:"pointer"}}>{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3></Link>

@@ -6,12 +6,10 @@ import moon from '../assets/moon.png'
 import { SocialMedia } from "./SocialMedia";
 
 const Div = styled.div`
-  width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: end;
-  padding-right: 40px;
   @media screen and (max-width: ${(props) => (props.bp + 'px')}){
     justify-content: space-between;
   }
@@ -19,7 +17,7 @@ const Div = styled.div`
   .hidden{
     display: none;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
-      display: flex;
+      display: ${(props) => (props.hidden? 'none' : 'flex')};
     }
   }
   
@@ -39,17 +37,17 @@ const Div = styled.div`
   }
 `
 
-export const ConfigureScreen = () => {
+export const ConfigureScreen = (props) => {
   const { language, defaultLanguage, currentTheme, setCurrentTheme, BASE_URL, mobileBreakPoint } = useContext(GlobalContext)
 
   return(
-    <Div bp={mobileBreakPoint}>
+    <Div bp={mobileBreakPoint} hidden={props.hidden}>
       <span className="hidden">
         <SocialMedia/>
       </span>
       <div className="theme-language">
         <span onClick={() => setCurrentTheme(!currentTheme)}>
-          {currentTheme ? <img src={sun}/> : <img src={moon}/>}
+          {currentTheme ? <img className="sun"src={sun}/> : <img src={moon}/>}
         </span>
         <p >
           {language === defaultLanguage ? 

@@ -111,7 +111,7 @@ export const Projects = () => {
   return(
     <Container id="projects" bp={mobileBreakPoint} ref={targetRef}>
       {/* {console.log(isVisible)} */}
-      <h3 className="degrade">{language === defaultLanguage ? 'Projetos' : 'Projects'}</h3>
+      <h3>{language === defaultLanguage ? 'Projetos' : 'Projects'}</h3>
       {projects.map((project, i) => {
         return(
           <div key={i}>

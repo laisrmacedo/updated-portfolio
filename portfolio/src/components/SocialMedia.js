@@ -7,24 +7,28 @@ import linkedin from '../assets/linkedin.png'
 const Container = styled.div`
     height: 30px;
     display: flex;
-    gap: 8px;
+    gap: 20px;
+    cursor: pointer;
 
     img{
       height: 25px;
-      opacity: 0.5;
+      filter: ${(props) => (props.currentTheme ? 'brightness(1.5)' : 'brightness(3)')};
+      &:hover{
+        filter: ${(props) => (props.currentTheme ? 'brightness(1.5)' : 'brightness(2)')};
+      }
     }
 `
 
 export const SocialMedia = () => {
-  const { language, defaultLanguage } = useContext(GlobalContext)
+  const { language, defaultLanguage, currentTheme } = useContext(GlobalContext)
 
   return(
-    <Container>
-      <a href="https://github.com/laisrmacedo"><img src={github}/></a>
+    <Container currentTheme={currentTheme}>
+      <a href="https://github.com/laisrmacedo" target="_blank"><img src={github}/></a>
       {language === defaultLanguage ?
-        <a href="https://www.linkedin.com/in/laisrmacedo/"><img src={linkedin}/></a>
+        <a href="https://www.linkedin.com/in/laisrmacedo/" target="_blank"><img src={linkedin}/></a>
         :
-        <a href="https://www.linkedin.com/in/laisrmacedo/?locale=en_US"><img src={linkedin}/></a>
+        <a href="https://www.linkedin.com/in/laisrmacedo/?locale=en_US" target="_blank"><img src={linkedin}/></a>
       }
     </Container>
   )

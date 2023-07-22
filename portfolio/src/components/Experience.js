@@ -104,7 +104,7 @@ export const Experience = () => {
 
   return(
     <Container id="experience" open={openDiv} bp={mobileBreakPoint} ref={targetRef}>
-      <h3 className="degrade">{language === defaultLanguage ? 'Experiência' : 'Experience'}</h3>
+      <h3>{language === defaultLanguage ? 'Experiência' : 'Experience'}</h3>
       {experiences.map((i, index) => {
         return(
           <div className="experience-box" key={index}>

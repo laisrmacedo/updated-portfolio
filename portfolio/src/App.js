@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Loading } from "./components/Loading";
-import { Container } from "./components/Container";
 import { GlobalContext } from "./context/GlobalContext";
 import { GlobalStyle, AppContainer } from "./GlobalStyle";
+import { HomeScreen } from "./components/HomeScreen";
+import { AnimatedText } from "./components/AnimatedText";
+import { Main } from "./components/Main";
 
 function App() {
   const [loading, isLoading] = useState(true)
@@ -11,13 +12,14 @@ function App() {
   const language = window.location.pathname
   const defaultLanguage = "/pt"
   const mobileBreakPoint = 480
-  // const BASE_URL = 'http://localhost:3000'
-  const BASE_URL = 'http://laisrmacedo.vercel.app'
+  const BASE_URL = 'http://localhost:3000'
+  // const BASE_URL = 'http://laisrmacedo.vercel.app'
   const [currentTheme, setCurrentTheme] = useState(false || JSON.parse(localStorage.getItem("theme")))
   const [visibleId, setVisibleId] = useState("btn-about");
 
   useEffect(()=>{
     localStorage.setItem("theme", currentTheme)
+    console.log(currentTheme)
   },[currentTheme])
   
   const context = {
@@ -35,11 +37,14 @@ function App() {
     <GlobalContext.Provider value={context}>
       <GlobalStyle currentTheme={currentTheme}/>
       <AppContainer>
-        {loading ?  
-          <Loading/>
-          :
-          <Container/>
-        }
+        <div id="background-homescreeen">
+          <img src="https://images.pexels.com/photos/4006143/pexels-photo-4006143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
+          <AnimatedText/>
+        </div>
+        <div id="main-content">
+          <HomeScreen/>
+          <Main/>
+        </div>
       </AppContainer>
     </GlobalContext.Provider>
   );
