@@ -17,16 +17,16 @@ const Container = styled.div`
   z-index: 0;
   font-size: 18px;
   position: absolute;
-  top: 200%;
-  animation: scrollText 15s linear infinite;
+  top: 100%;
+  animation: scrollText 8s linear infinite;
 }
 
 @keyframes scrollText {
   0% {
-    top: 100%;
+    top: 0%;
   }
   100% {
-    top: -200%;
+    top: -100%;
   }
 }
 `
@@ -36,6 +36,9 @@ export const AnimatedText = () => {
   return(
     <Container>
       <div class="scrolling-text">
+        <SimulatedCode/>
+        <SimulatedCode/>
+        <SimulatedCode/>
         <SimulatedCode/>
       </div>
     </Container>

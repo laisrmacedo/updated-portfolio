@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
-import { Loading } from "./components/Loading";
-import { Container } from "./components/Container";
 import { GlobalContext } from "./context/GlobalContext";
 import { GlobalStyle, AppContainer } from "./GlobalStyle";
 import { HomeScreen } from "./components/HomeScreen";
 import { AnimatedText } from "./components/AnimatedText";
+import { Main } from "./components/Main";
 
 function App() {
   const [loading, isLoading] = useState(true)
@@ -20,6 +19,7 @@ function App() {
 
   useEffect(()=>{
     localStorage.setItem("theme", currentTheme)
+    console.log(currentTheme)
   },[currentTheme])
   
   const context = {
@@ -41,14 +41,10 @@ function App() {
           <img src="https://images.pexels.com/photos/4006143/pexels-photo-4006143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
           <AnimatedText/>
         </div>
-        {/* {loading ?  
-          <Loading/>
-          : */}
         <div id="main-content">
           <HomeScreen/>
-          <Container/>
+          <Main/>
         </div>
-        {/* } */}
       </AppContainer>
     </GlobalContext.Provider>
   );

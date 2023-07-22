@@ -5,14 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
     font-weight: 400;
     font-family: 'Josefin Sans', sans-serif;
-    color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
-    transition: background 1s ease-in-out;
 
     ::-webkit-scrollbar-track {
-      background: #000; 
+      background: transparent; 
     };
     ::-webkit-scrollbar{
       width: 8px;
@@ -27,14 +25,6 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar-thumb:active {
       background: rgba(124,161,191,0.3); 
     }
-  }
-
-  #home-screen{
-    background:  ${(props) => (props.currentTheme ? 'rgb(255, 255, 255, .7)' : 'rgb(51, 65, 77, .8)')};
-  }
-
-  #container{
-    background:  ${(props) => (props.currentTheme ? '#fff' : '#33414d')};
   }
 
   section{
@@ -67,6 +57,8 @@ export const GlobalStyle = createGlobalStyle`
 
   a{
     text-decoration: none;
+    color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
+    cursor: pointer;
     &:hover{
       color: #91B797;
       transition: color .3s ease-in-out;
@@ -124,6 +116,21 @@ export const GlobalStyle = createGlobalStyle`
   #loom-companion-mv3{
     display: none;
   }
+
+  #home-screen{
+    backdrop-filter: ${(props) => (props.currentTheme ? 'blur(5px)' : 'blur(2px)')};
+    color: #fffaeb;
+    background:  ${(props) => (props.currentTheme ? 'rgba(150,150,150, .5)' : 'rgb(51, 65, 77, .8)')};
+    button, a{
+      color: #fffaeb;
+    }
+  }
+  
+  main{
+    background:  ${(props) => (props.currentTheme ? '#fff' : '#33414d')};
+    color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
+    transition: background 1s ease-in-out;
+  }
 `
 
 export const AppContainer = styled.div`
@@ -132,6 +139,8 @@ export const AppContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
+
   #background-homescreeen{
     position: fixed;
     top: 0;
@@ -149,11 +158,15 @@ export const AppContainer = styled.div`
       object-fit: cover;
       width: 100%;
       height: 100%;
+      @media screen and (max-width: 480px){
+        /* object-fit: contain; */
+      }
     }
   }
   #main-content{
-    overflow-y: auto;
+    overflow-y: hidden;
     position: relative;
-    top: 1;
+    height: 100%;
+    width: 100%;
   }
 `

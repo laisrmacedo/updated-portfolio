@@ -7,14 +7,15 @@ import { useScrollObserver } from "../hooks/useScrollObserver";
 
 const Container = styled.section`
   gap: 20px;
+  position: relative;
 
   >div{
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 16px;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     h3{
       display: none;
       @media screen and (max-width: ${(props) => (props.bp + 'px')}){
@@ -23,14 +24,19 @@ const Container = styled.section`
       }
     }
   }
-
+  h4{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
+  
   span{
     font-size: 16px;
     font-weight: 200;
     line-height: 24px;
     text-align: justify;
   }
-`
+  `
 
 const PhotoBox = styled.span`
   figure{
@@ -58,7 +64,7 @@ export const About = () => {
   return(
     <Container id="about" bp={mobileBreakPoint} ref={targetRef}>
       <div>
-        <h3 className="degrade">{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3>
+        <h3>{language === defaultLanguage ? 'Sobre mim' : 'About'}</h3>
         <button onClick={() => setTextSize(0)} className="smallBtn">{language === '/pt'? 'Curto' : 'Short'}</button>
         <button onClick={() => setTextSize(1)} className="smallBtn">{language === '/pt'? 'Longo' : 'Long'}</button>
       </div>
@@ -108,6 +114,7 @@ export const About = () => {
           </>
           )
         }
+        <h4 className="degrade">{language === defaultLanguage ? '#buscandoEmprego' : '#openToWork'}</h4>
     </Container>
   )
 }
