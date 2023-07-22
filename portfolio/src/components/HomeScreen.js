@@ -110,7 +110,7 @@ export const HomeScreen = () => {
         <h3 className="degrade">Portfolio</h3>
         <span>
           <h1>Laís Rodrigues</h1>
-          {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Web Full Stack Desenveloper</p>}
+          {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Full Stack Web Developer</p>}
         </span>
         <Link to="navContainer" smooth={true} duration={1800}><button>{language === defaultLanguage ? 'Sobre mim' : 'Read more'} <span>&darr;</span></button></Link>
       </div>

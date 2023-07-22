@@ -123,7 +123,7 @@ export const Experience = () => {
       })}
       <div className="allSkills">
         <div onClick={() => setOpenDiv(!openDiv)}>
-          <h3>{language === defaultLanguage ? "Minhas Habilidades" : "All Skills"}</h3>
+          <h3>{language === defaultLanguage ? "Habilidades" : "All Skills"}</h3>
           <span id="rotateBtn">
             <p style={{transform: 'rotate(45deg)'}}>|</p>
             <p style={{transform: 'rotate(-45deg)'}}>|</p>

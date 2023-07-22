@@ -105,7 +105,7 @@ export const Header = () => {
           <Lottie animationData={colors} loop={true} style={{ height: 60, overflowY: "hidden" }} />
             <span>
               <h1>Laís Rodrigues</h1>
-              {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Web Full Stack Desenveloper</p>}
+              {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Full Stack Web Developer</p>}
             </span>
         </div>
       </Link>
