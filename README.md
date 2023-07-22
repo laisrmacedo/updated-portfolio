@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/laisrmacedo/labeddit-frontend/blob/main/labeddit/src/assets/logoLogin.png?raw=true" />
+  <img src="https://media.licdn.com/dms/image/D4E22AQEbPccASLkxKg/feedshare-shrink_1280/0/1689371962868?e=1692835200&v=beta&t=T1zk_leFaV-U6kRJJNKo1U6YbHvNqLWyt8pNftOssGU" />
 </p>
 <h3 align="center">PORTFOLIO 2.0</h3>
 <br>
