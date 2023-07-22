@@ -55,7 +55,7 @@ export const GlobalStyle = createGlobalStyle`
     text-align: justify;
   }
 
-  a{
+  button, a{
     text-decoration: none;
     color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
     cursor: pointer;

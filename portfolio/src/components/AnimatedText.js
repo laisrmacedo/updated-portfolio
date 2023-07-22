@@ -15,7 +15,6 @@ const Container = styled.div`
   
 .scrolling-text {
   z-index: 0;
-  font-size: 18px;
   position: absolute;
   top: 100%;
   animation: scrollText 8s linear infinite;

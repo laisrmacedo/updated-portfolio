@@ -6,9 +6,6 @@ import { AnimatedText } from "./components/AnimatedText";
 import { Main } from "./components/Main";
 
 function App() {
-  const [loading, isLoading] = useState(true)
-  setTimeout(() => isLoading(false), 3500)
-  
   const language = window.location.pathname
   const defaultLanguage = "/pt"
   const mobileBreakPoint = 480

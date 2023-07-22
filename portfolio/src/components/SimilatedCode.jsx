@@ -8,14 +8,13 @@ const Container = styled.div`
   background-color: transparent;
   padding: 20px;
   white-space: pre-wrap;
-  font-size: 14px;
   line-height: 1.5;
 }
 
 .code code {
   display: block;
   color:#BCC9F1 ;
-  font-size: 8px;
+  font-size: 6px;
 }
 
 /* .code .function {

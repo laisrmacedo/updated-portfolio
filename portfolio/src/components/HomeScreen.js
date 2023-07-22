@@ -12,6 +12,7 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -64,6 +65,8 @@ const Container = styled.div`
     gap: 40px;
     justify-content: center;
     align-items: center;
+    height: 90%;
+
     >span{
       display: flex;
       flex-direction: column;
@@ -75,12 +78,11 @@ const Container = styled.div`
   >span{
     width: 100%;
     max-width: 1320px;
+    height: 10%;
     padding: 0 40px;
-    position: absolute;
-    bottom: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     a{
       img{
         filter: brightness(2);
@@ -90,6 +92,9 @@ const Container = styled.div`
       .sun{
         filter: invert(1);
       }
+    }
+    .hidden{
+      display: none;
     }
   }
   `

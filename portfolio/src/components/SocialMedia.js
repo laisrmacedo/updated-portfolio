@@ -2,7 +2,9 @@ import { useContext } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalContext";
 import github from '../assets/github.png'
+import home from '../assets/home.png'
 import linkedin from '../assets/linkedin.png'
+import { Link } from "react-scroll";
 
 const Container = styled.div`
     height: 30px;
@@ -12,9 +14,9 @@ const Container = styled.div`
 
     img{
       height: 25px;
-      filter: ${(props) => (props.currentTheme ? 'brightness(1.5)' : 'brightness(3)')};
+      filter: ${(props) => (props.currentTheme ? 'brightness(1.5)' : 'brightness(1.8)')};
       &:hover{
-        filter: ${(props) => (props.currentTheme ? 'brightness(1.5)' : 'brightness(2)')};
+        filter: ${(props) => (props.currentTheme ? 'brightness(1)' : 'brightness(3)')};
       }
     }
 `
@@ -24,6 +26,7 @@ export const SocialMedia = () => {
 
   return(
     <Container currentTheme={currentTheme}>
+      <Link to="home-screen" smooth={true} duration={1800}><img className="hidden" src={home}/></Link>
       <a href="https://github.com/laisrmacedo" target="_blank"><img src={github}/></a>
       {language === defaultLanguage ?
         <a href="https://www.linkedin.com/in/laisrmacedo/" target="_blank"><img src={linkedin}/></a>
