@@ -38,6 +38,13 @@ const Container = styled.div`
     text-transform: uppercase;
     position: relative;
     cursor: pointer;
+    &:hover{
+      background: #7D7D7E8a;
+      transition: background .5s ease-in-out;
+    }
+    &:active{
+      background: #91B7977a;
+    }
     span{
       position: absolute;
       right: 12px;
