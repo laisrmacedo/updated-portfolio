@@ -63,10 +63,10 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     gap: 40px;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    height: 85%;
-
+    height: 60%;
+    padding-bottom: 80px;
     >span{
       display: flex;
       flex-direction: column;
@@ -76,12 +76,14 @@ const Container = styled.div`
     }
   }
   >span{
+    /* border: 1px solid red; */
     width: 100%;
     max-width: 1320px;
-    height: 15%;
-    padding: 0 40px;
+    height: 30%;
+    padding: 60px 40px 0 20px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     align-items: start;
     a{
       img{
