@@ -65,7 +65,7 @@ const Container = styled.div`
     gap: 40px;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    height: 85%;
 
     >span{
       display: flex;
@@ -78,7 +78,7 @@ const Container = styled.div`
   >span{
     width: 100%;
     max-width: 1320px;
-    height: 10%;
+    height: 15%;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
