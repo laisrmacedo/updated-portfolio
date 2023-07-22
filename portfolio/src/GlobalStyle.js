@@ -118,7 +118,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   #home-screen{
-    backdrop-filter: ${(props) => (props.currentTheme ? 'blur(5px)' : 'blur(2px)')};
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
     color: #fffaeb;
     background:  ${(props) => (props.currentTheme ? 'rgba(150,150,150, .5)' : 'rgb(51, 65, 77, .8)')};
     transition: background 1s ease-in-out;
