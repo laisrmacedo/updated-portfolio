@@ -12,9 +12,8 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
   h1{
     font-size: min(48px, 10vw);
@@ -91,10 +90,10 @@ const Container = styled.div`
     justify-content: space-between;
     gap: 20px;
     align-items: start;
-    margin-top: 200px;
+    margin-top: 150px;
     a{
       img{
-        filter: brightness(2);
+        filter: brightness(2.5);
       }
     }
     span{
