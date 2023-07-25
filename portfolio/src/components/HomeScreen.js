@@ -17,7 +17,7 @@ const Container = styled.div`
   align-items: center;
 
   h1{
-    font-size: max(48px, 5vw);
+    font-size: min(48px, 10vw);
   }
   h3{
     font-weight: 700;
@@ -72,26 +72,26 @@ const Container = styled.div`
     gap: 40px;
     justify-content: end;
     align-items: center;
-    height: 60%;
-    padding-bottom: 80px;
-    >span{
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-  >span{
-    /* border: 1px solid red; */
+    height: 83vh;
     width: 100%;
     max-width: 1320px;
-    height: 30%;
-    padding: 60px 40px 0 20px;
+    /* border: 1px solid red; */
+  }
+  .title{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-media{
+    width: 100%;
+    padding: 0 40px 0 20px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
     align-items: start;
+    margin-top: 200px;
     a{
       img{
         filter: brightness(2);
@@ -115,16 +115,16 @@ export const HomeScreen = () => {
     <Container id="home-screen">
       <div>
         <h3 className="degrade">Portfolio</h3>
-        <span>
+        <span className="title">
           <h1>Laís Rodrigues</h1>
           {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Full Stack Web Developer</p>}
         </span>
         <Link to="navContainer" smooth={true} duration={1800}><button>{language === defaultLanguage ? 'Saiba mais' : 'Read more'} <span>&darr;</span></button></Link>
+        <span className="social-media">
+          <SocialMedia/>
+          <ConfigureScreen hidden={true}/>
+        </span>
       </div>
-      <span>
-        <SocialMedia/>
-        <ConfigureScreen hidden={true}/>
-      </span>
     </Container>
   )
 }
