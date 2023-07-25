@@ -9,11 +9,18 @@ import { Link } from "react-scroll";
 const Container = styled.div`
     height: 30px;
     display: flex;
+    align-items: center;
     gap: 20px;
-    cursor: pointer;
 
+    a{
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    
     img{
-      height: 25px;
+      cursor: pointer;
+      height: 28px;
       filter: ${(props) => (props.currentTheme ? 'brightness(1.5)' : 'brightness(1.8)')};
       &:hover{
         filter: ${(props) => (props.currentTheme ? 'brightness(1)' : 'brightness(3)')};
