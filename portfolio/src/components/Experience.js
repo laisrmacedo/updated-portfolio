@@ -111,11 +111,17 @@ export const Experience = () => {
             <p>{language === defaultLanguage ? i.timePT : i.timeEN}</p>
             <div className="info">
               <span>
-                <h3>{language === defaultLanguage ? i.titlePT : i.titleEN}</h3>&bull;<p><a href={i.link}>{i.company}</a></p>
+                <h3>{language === defaultLanguage ? i.titlePT : i.titleEN}</h3>
+                &bull;
+                <p><a href={i.link}>{language === defaultLanguage ? i.subtitlePT : i.subtitleEN}</a></p>
               </span>
               <p>{language === defaultLanguage ? i.descriptionPT : i.descriptionEN}</p>
               <span>
-                {i.skills.map((skill, i) => <p key={i} className="skill">{skill}</p>)}
+                {language === defaultLanguage ?  
+                  i.skillsPT.map((skill, i) => <p key={i} className="skill">{skill}</p>)
+                  : 
+                  i.skillsEN.map((skill, i) => <p key={i} className="skill">{skill}</p>)
+                }
               </span>
             </div>
           </div>

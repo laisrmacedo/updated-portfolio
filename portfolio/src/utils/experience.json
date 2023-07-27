@@ -1,24 +1,58 @@
 [
   {
-    "titlePT" : "Desenvolvedora Web Full Stack Freelancer",
-    "titleEN" : "Freelance Full Stack Web Developer",
-    "company" : "",
+    "titlePT" : "Desenvolvedora Web Full Stack",
+    "titleEN" : "Full Stack Web Developer",
+    "subtitlePT" : "Freelancer",
+    "subtitleEN" : "Freelancer",
     "link" : "",
-    "timePT" : "MAIO - PRESENTE",
+    "timePT" : "MAI - PRESENTE",
     "timeEN" : "MAY - PRESENT",
     "descriptionPT" : "Desenvolvimento de soluções web personalizadas, com implementação do front-end e/ou back-end.",
     "descriptionEN" : "Development of custom web solutions, with front-end and/or back-end implementation.",
-    "skills" : ["React", "JavaScript", "TypeScript", "CSS", "Node.JS", "Jest"]
+    "skillsPT" : ["React", "JavaScript", "TypeScript", "CSS", "Node.JS", "Jest"],
+    "skillsEN" : ["React", "JavaScript", "TypeScript", "CSS", "Node.JS", "Jest"],
+    "more": ""
   },
   {
     "titlePT" : "Desenvolvedora Full Stack",
     "titleEN" : "Full Stack Developer",
-    "company" : "CocriarSe Carreiras",
+    "subtitlePT" : "CocriarSe Carreiras",
+    "subtitleEN" : "CocriarSe Carreiras",
     "link" : "https://cocriarse.com.br/",
-    "timePT" : "ABRIL - PRESENTE",
-    "timeEN" : "APRIL - PRESENT",
-    "descriptionPT" : "Responsável pelo desenvolvimento do site da CocriarSe Carreiras. A atividade conta com a participação de uma equipe multifuncional e multicultural.",
-    "descriptionEN" : "Responsible for the development of the CocriarSe Carreiras website. The activity counts on the participation of a multifunctional and multicultural team.",
-    "skills" : ["WordPress", "JavaScript", "CSS", "Figma"]
+    "timePT" : "ABR - PRESENTE",
+    "timeEN" : "APR - PRESENT",
+    "descriptionPT" : "Responsável pelo desenvolvimento do site atual da empresa, utilizando ferramentas como JavaScript, CSS, HTML, WordPress e Figma. Atuo em uma equipe multifuncional e multicultural, incluindo profissionais de UX/UI design, product manager, product designer, product marketing e analista de conteúdo. Minha principal função consiste em transformar wireframes fornecidos pelos UX/UI Design em páginas funcionais.",
+    "descriptionEN" : "Responsible for developing the current company website, using tools such as JavaScript, CSS, HTML, WordPress, and Figma. I work in a multifunctional and multicultural team, including professionals from UX/UI design, product management, product design, product marketing, and content analysis. My main role is to translate wireframes provided by UX/UI Design into functional pages.",
+    "skillsPT" : ["WordPress", "JavaScript", "CSS", "HTML", "Figma"],
+    "skillsEN" : ["WordPress", "JavaScript", "CSS", "HTML", "Figma"],
+    "more": ""
+  },
+  {
+    "titlePT" : "Web Full Stack Integral",
+    "titleEN" : "Full Stack Web Development",
+    "subtitlePT" : "Labenu",
+    "subtitleEN" : "Labenu",
+    "link" : "https://drive.google.com/file/d/1_SyL7I44Q3KAChmW0Oa6t9Qz1RGzFH9F/view",
+    "timePT" : "AGO/22 - MAR/23",
+    "timeEN" : "AUG/22 - MAR/23",
+    "descriptionPT" : "Programa com mais de 1000 horas de experiência prática em desenvolvimento Full-stack, guiadas por metodologias ágeis (Kanban/Scrum).",
+    "descriptionEN" : "Program with over 1000 hours of hands-on experience in Full-stack development, guided by agile methodologies (Kanban/Scrum).",
+    "skillsPT" : ["HTML", "CSS", "JavaScript", "React", "Styled-Components", "React Hooks", "REST", "Api Restful", "HTTP", "Jest", "Node.JS", "Knex", "TypeScript", "MySQL", "AWS", "SQL", "Git", "Github", "Testes unitários", "UI Design"],
+    "skillsEN" : ["HTML", "CSS", "JavaScript", "React", "Styled-Components", "React Hooks", "REST", "Api Restful", "HTTP", "Jest", "Node.JS", "Knex", "TypeScript", "MySQL", "AWS", "SQL", "Git", "Github", "Unit Testing", "UI Design"],
+    "more": ""
+  },  
+  {
+    "titlePT" : "Graduação em Engenharia Civil",
+    "titleEN" : "Bachelor's Degree in Civil Engineering",
+    "subtitlePT" : "UFCG",
+    "subtitleEN" : "UFCG",
+    "link" : "",
+    "timePT" : "2015 - 2019",
+    "timeEN" : "2015 - 2019",
+    "descriptionPT" : "Desenvolvimento de soluções web personalizadas, com implementação do front-end e/ou back-end.",
+    "descriptionEN" : "Development of custom web solutions, with front-end and/or back-end implementation.",
+    "skillsPT" : ["Capacidade de organização", "Desenho técnico", "Habilidades analíticas", "Trabalho em equipe", "Criatividade", "Atenção a detalhes"],
+    "skillsEN" : ["Organizational skills", "Technical drawing", "Analytical skills", "Teamwork", "Creativity", "Attention to detail"],
+    "more": ""
   }
 ]
