@@ -26,7 +26,7 @@ export function useScrollObserver(targetRef) {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.8
+      threshold: 0.6
     };
 
     const observer = new IntersectionObserver(callback, options);
