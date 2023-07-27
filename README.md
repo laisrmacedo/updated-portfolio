@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.licdn.com/dms/image/D4E22AQEbPccASLkxKg/feedshare-shrink_1280/0/1689371962868?e=1692835200&v=beta&t=T1zk_leFaV-U6kRJJNKo1U6YbHvNqLWyt8pNftOssGU" />
+  <img src="https://media.licdn.com/dms/image/D4E2DAQE4iaYS6rZhcQ/profile-treasury-image-shrink_8192_8192/0/1690466087605?e=1691078400&v=beta&t=h1qlQFGUVyF1YqKOzOduy85pXwez--1UWe0_a5nlxXY" />
 </p>
 <h3 align="center">PORTFOLIO 2.0</h3>
 <br>
