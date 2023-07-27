@@ -28,8 +28,8 @@
     "more": ""
   },
   {
-    "titlePT" : "Web Full Stack Integral",
-    "titleEN" : "Full Stack Web Development",
+    "titlePT" : "Curso Web Full Stack Integral",
+    "titleEN" : "Full Stack Web Development Course",
     "subtitlePT" : "Labenu",
     "subtitleEN" : "Labenu",
     "link" : "https://drive.google.com/file/d/1_SyL7I44Q3KAChmW0Oa6t9Qz1RGzFH9F/view",
@@ -42,15 +42,15 @@
     "more": ""
   },  
   {
-    "titlePT" : "Graduação em Engenharia Civil",
-    "titleEN" : "Bachelor's Degree in Civil Engineering",
+    "titlePT" : "Engenharia Civil",
+    "titleEN" : "Civil Engineering",
     "subtitlePT" : "UFCG",
     "subtitleEN" : "UFCG",
     "link" : "",
     "timePT" : "2015 - 2019",
     "timeEN" : "2015 - 2019",
-    "descriptionPT" : "Desenvolvimento de soluções web personalizadas, com implementação do front-end e/ou back-end.",
-    "descriptionEN" : "Development of custom web solutions, with front-end and/or back-end implementation.",
+    "descriptionPT" : "Graduação Completa.",
+    "descriptionEN" : "Completed Bachelor's Degree.",
     "skillsPT" : ["Capacidade de organização", "Desenho técnico", "Habilidades analíticas", "Trabalho em equipe", "Criatividade", "Atenção a detalhes"],
     "skillsEN" : ["Organizational skills", "Technical drawing", "Analytical skills", "Teamwork", "Creativity", "Attention to detail"],
     "more": ""
