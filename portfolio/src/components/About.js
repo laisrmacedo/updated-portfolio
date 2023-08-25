@@ -3,6 +3,7 @@ import styled from "styled-components";
 import myself from "../assets/myself.png";
 import { GlobalContext } from "../context/GlobalContext"
 import { useScrollObserver } from "../hooks/useScrollObserver";
+import { Recommendation } from "./Recommendation";
 
 
 const Container = styled.section`
@@ -132,6 +133,7 @@ export const About = () => {
         </>
         }
       </aside>
+      <Recommendation/>
     </Container>
   )
 }

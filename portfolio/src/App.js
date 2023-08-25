@@ -16,7 +16,6 @@ function App() {
 
   useEffect(()=>{
     localStorage.setItem("theme", currentTheme)
-    console.log(currentTheme)
   },[currentTheme])
   
   const context = {

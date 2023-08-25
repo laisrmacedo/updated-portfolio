@@ -79,6 +79,10 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .recommendationBackground{
+    background: ${(props) => (props.currentTheme ? 'rgba(222, 207, 184, 0.1)' : 'rgba(145,183,151,0.1)')};
+  }
+
   .skill{
     background:  ${(props) => (props.currentTheme ? '#F9F3EB8a' : '#50677A5a')};
     font-variant: all-small-caps;
