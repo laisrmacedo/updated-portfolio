@@ -31,7 +31,7 @@ function App() {
 
   return (
     <GlobalContext.Provider value={context}>
-      <GlobalStyle currentTheme={currentTheme}/>
+      <GlobalStyle theme={currentTheme}/>
       <AppContainer>
         <div id="background-homescreeen">
           <img src="https://images.pexels.com/photos/4006143/pexels-photo-4006143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>

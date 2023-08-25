@@ -57,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
 
   button, a{
     text-decoration: none;
-    color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
+    color:  ${(props) => (props.theme ? '#485C6D' : '#fffaeb')};
     cursor: pointer;
     &:hover{
       color: #91B797;
@@ -66,7 +66,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .smallBtn{
-    background: ${(props) => (props.currentTheme ? '#F4E9DB' : '#5A8279')};
+    background: ${(props) => (props.theme ? '#F4E9DB' : '#5A8279')};
     border: none;
     border-radius: 8px;
     padding: 4px 20px;
@@ -74,25 +74,25 @@ export const GlobalStyle = createGlobalStyle`
     font-variant: all-small-caps;
     cursor: pointer;
     &:hover{
-      background: ${(props) => (props.currentTheme ? '#DED0B8' : '#F4E9DB8a')};
+      background: ${(props) => (props.theme ? '#DED0B8' : '#F4E9DB8a')};
       transition: background .3s ease-in-out;
     }
   }
 
   .recommendationBackground{
-    background: ${(props) => (props.currentTheme ? 'rgba(222, 207, 184, 0.1)' : 'rgba(145,183,151,0.1)')};
+    background: ${(props) => (props.theme ? 'rgba(222, 207, 184, 0.1)' : 'rgba(145,183,151,0.1)')};
   }
 
   .skill{
-    background:  ${(props) => (props.currentTheme ? '#F9F3EB8a' : '#50677A5a')};
+    background:  ${(props) => (props.theme ? '#F9F3EB8a' : '#50677A5a')};
     font-variant: all-small-caps;
     padding: 0px 12px;
     border-radius: 12px;
     font-size: 14px;
-    color: ${(props) => (props.currentTheme ? '#485C6D' : '#C4C7AC')};
+    color: ${(props) => (props.theme ? '#485C6D' : '#C4C7AC')};
     cursor: default;
     &:hover{
-      background: ${(props) => (props.currentTheme ? '#F4E9DB' : '#203647')};
+      background: ${(props) => (props.theme ? '#F4E9DB' : '#203647')};
       transition: background .3s ease-in-out;
     }
   }
@@ -125,7 +125,7 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     color: #fffaeb;
-    background:  ${(props) => (props.currentTheme ? 'rgba(150,150,150, .5)' : 'rgb(51, 65, 77, .8)')};
+    background:  ${(props) => (props.theme ? 'rgba(150,150,150, .5)' : 'rgb(51, 65, 77, .8)')};
     transition: background 1s ease-in-out;
     button, a{
       color: #fffaeb;
@@ -133,8 +133,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   main{
-    background:  ${(props) => (props.currentTheme ? '#fff' : '#33414d')};
-    color:  ${(props) => (props.currentTheme ? '#485C6D' : '#fffaeb')};
+    background:  ${(props) => (props.theme ? '#fff' : '#33414d')};
+    color:  ${(props) => (props.theme ? '#485C6D' : '#fffaeb')};
     transition: background 1s ease-in-out;
   }
 `
