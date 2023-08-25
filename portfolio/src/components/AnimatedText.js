@@ -11,7 +11,6 @@ const Container = styled.div`
   z-index: 1;
   margin: 20px;
   border-radius: 12px;
-  /* border: 5px solid red; */
   
 .scrolling-text {
   z-index: 0;
@@ -34,7 +33,7 @@ const Container = styled.div`
 export const AnimatedText = () => {
   return(
     <Container>
-      <div class="scrolling-text">
+      <div className="scrolling-text">
         <SimulatedCode/>
         <SimulatedCode/>
         <SimulatedCode/>
