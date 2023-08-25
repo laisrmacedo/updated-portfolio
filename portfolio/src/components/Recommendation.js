@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { GlobalContext } from "../context/GlobalContext";
 import recommendations from "../utils/recommendation.json"
@@ -15,12 +15,13 @@ const Container = styled.div`
   
   .title{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     @media screen and (max-width: ${(props) => (props.bp + 'px')}){
       justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
   }
   #card{
@@ -80,6 +81,12 @@ const Container = styled.div`
 export const Recommendation = () => {
   const { language, defaultLanguage, mobileBreakPoint } = useContext(GlobalContext)
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [card, setCard] = useState(null)
+  const cardRef = useRef(null)
+
+  useEffect(() => {
+    setCard(cardRef.current)
+  }, [])
 
   return (
     <Container className="recommendationBackground" bp={mobileBreakPoint}>
@@ -94,8 +101,8 @@ export const Recommendation = () => {
           })}
         </div>
       </div>
-      <CardCarousel items={recommendations} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}>
-        <div id="card">
+      <CardCarousel items={recommendations} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} card={card}>
+        <div id="card" ref={cardRef}>
           <p>{language === defaultLanguage ? recommendations[currentIndex].textPT : recommendations[currentIndex].textEN}</p>
           <a href={recommendations[currentIndex].linkedin} target="_blank">
             <h4>{recommendations[currentIndex].name}</h4>

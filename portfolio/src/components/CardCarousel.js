@@ -12,6 +12,9 @@ export const CardCarousel = (props) => {
       const diffX = startX - event.touches[0].clientX;
       if (diffX > 50 && props.currentIndex < props.items.length - 1) {
         props.setCurrentIndex((prevIndex) => prevIndex + 1)
+
+        // props.card.style.transition = 'transform 0.3s ease'
+        // props.card.style.transform = `translateX(-${100 }%)`
         setStartX(null)
       } else if (diffX < -50 && props.currentIndex > 0) {
         props.setCurrentIndex((prevIndex) => prevIndex - 1)
