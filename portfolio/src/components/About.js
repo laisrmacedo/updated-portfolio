@@ -124,12 +124,12 @@ export const About = () => {
         {language === defaultLanguage ? 
         <>
           <h4 className="degrade">#buscandoEmprego</h4>
-          <a href="https://drive.google.com/file/d/1FDfQA03a5_llIOPaFcFgMCJcMZBTC0ag/view?usp=sharing" target="_blank">Currículo 📄</a>
+          <a href="https://drive.google.com/file/d/1VmtYOiGCSH7TPZMJ7nu8y4EzIPv3HPhk/view?usp=drive_link" target="_blank">Currículo 📄</a>
         </>
         :
         <>
           <h4 className="degrade">#openToWork</h4>
-          <a href="https://drive.google.com/file/d/1pIbpkeWbu3yzYVtbhEdtW3iCfqfpbUrT/view?usp=sharing" target="_blank">View full CV 📄</a>
+          <a href="https://drive.google.com/file/d/1vhOpgJxQBBG4pdRh18hwwptvHIbfP7RC/view?usp=drive_link" target="_blank">View full CV 📄</a>
         </>
         }
       </aside>
