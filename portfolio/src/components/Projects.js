@@ -124,8 +124,8 @@ export const Projects = () => {
                   <h3><a href={project.deploy}>{language === defaultLanguage?  project.titlePT : project.titleEN}</a></h3>&bull;<p>{project.category}</p>
                 </span>
                 <span>
-                  <h5><a href={project.deploy}>&uarr;</a></h5>
-                  <a href={project.repository}>&#128193;</a>
+                  <h5><a href={project.deploy} target="_blank">&uarr;</a></h5>
+                  <a href={project.repository} target="_blank">&#128193;</a>
                 </span>
               </div>
               <p>{language === defaultLanguage?  project.descriptionPT : project.descriptionEN}</p>
@@ -135,7 +135,7 @@ export const Projects = () => {
             </div>
           </div>
         )
-      })}
+      }).reverse()}
     </Container>
   )
 }
