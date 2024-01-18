@@ -121,7 +121,7 @@ export const Projects = () => {
             <div className="container-info-project">
               <div className="title">
                 <span>
-                  <h3><a href={project.deploy}>{language === defaultLanguage?  project.titlePT : project.titleEN}</a></h3>&bull;<p>{project.category}</p>
+                  <h3><a href={project.deploy} target="_blank">{language === defaultLanguage?  project.titlePT : project.titleEN}</a></h3>&bull;<p>{project.category}</p>
                 </span>
                 <span>
                   <h5><a href={project.deploy} target="_blank">&uarr;</a></h5>

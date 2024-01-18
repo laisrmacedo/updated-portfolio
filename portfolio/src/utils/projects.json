@@ -33,7 +33,7 @@
     "titleEN": "Labeddit",
     "descriptionPT": "Rede social na qual os usuários podem divulgar conteúdo e interagir de forma positiva ou negativa em publicações.",
     "descriptionEN": "Social network in which users can share content and interact positively or negatively in publications.",
-    "deploy": "https://labeddit-laisrmacedo.surge.sh/users/login",
+    "deploy": "https://labeddit-laisrmacedo.vercel.app/users/login",
     "repository": "https://github.com/laisrmacedo/labeddit-frontend",
     "image": "https://github.com/laisrmacedo/updated-portfolio/blob/main/portfolio/src/assets/labenu.png?raw=true",
     "tools": ["react", "typescript", "styled-components", "node.js", "SQL", "Express.js"],
