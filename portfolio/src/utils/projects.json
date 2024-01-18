@@ -19,7 +19,7 @@
     "titleEN": "Pokédex",
     "descriptionPT": "Aplicação web que permite aos usuários visualizar todos os Pokémons existentes e suas informações, além de 'capturar' aqueles que tiver interesse.",
     "descriptionEN": "Web application that allows users to view all existing Pokémon and their information, as well as 'capture' the ones they are interested in.",
-    "deploy": "https://pokedex.built.by.laismacedo.surge.sh",
+    "deploy": "https://pokedex-laisrmacedo.vercel.app/",
     "repository": "https://github.com/laisrmacedo/Pokedex/tree/main/site-de-pokemons",
     "image": "https://github.com/laisrmacedo/updated-portfolio/blob/main/portfolio/src/assets/pokemon.png?raw=true",
     "tools": ["react", "javascript", "CSS", "styled-components", "API"],
