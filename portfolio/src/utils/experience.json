@@ -1,7 +1,7 @@
 [
   {
     "titlePT" : "Desenvolvedora Web Full Stack",
-    "titleEN" : "Full Stack Web Developer",
+    "titleEN" : "Frontend Web Developer",
     "subtitlePT" : "Docunder",
     "subtitleEN" : "Docunder",
     "link" : "https://www.linkedin.com/company/docunder/about/",
@@ -9,8 +9,8 @@
     "timeEN" : "JAN - PRESENT",
     "descriptionPT" : "Docunder é uma plataforma de documentação técnica funcional e colaborativa que irá permitir a criação, edição, compartilhamento e organização eficiente de documentos técnicos sobre produtos de hardware ou software. Neste projeto, sou responsável pelo desenvolvimento frontend e participo do desenvolvimento backend. Estamos utilizando ferramentas como NextJS, TypeScript, CSS, Docker, NodeJS, Prisma e Figma. Trabalho em uma equipa multifuncional e multicultural, que inclui profissionais de UX/UI design, gestão de produto, design de produto, metodologias ágeis e desenvolvimento.",
     "descriptionEN" : "Docunder is a functional and collaborative technical documentation platform that will enable the efficient creation, editing, sharing and organization of technical documents on hardware or software products. In this project, I am responsible for frontend development and participate in backend development. We are using tools such as NextJS, TypeScript, CSS, Docker, NodeJS, Prisma and Figma. I work in a multifunctional and multicultural team, which includes professionals from UX/UI design, product management, product design, agile methodologies and development.",
-    "skillsPT" : ["NextJS", "TypeScript", "CSS", "Node.JS", "Prisma", "Docker", "Figma"],
-    "skillsEN" : ["NextJS", "TypeScript", "CSS", "Node.JS", "Prisma", "Docker", "Figma"],
+    "skillsPT" : ["NextJS", "TypeScript", "Tailwind CSS", "Node.JS", "Prisma", "Docker", "Figma"],
+    "skillsEN" : ["NextJS", "TypeScript", "Tailwind CSS", "Node.JS", "Prisma", "Docker", "Figma"],
     "more": ""
   },
   {

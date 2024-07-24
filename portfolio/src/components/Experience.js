@@ -113,7 +113,7 @@ export const Experience = () => {
               <span>
                 <h3>{language === defaultLanguage ? i.titlePT : i.titleEN}</h3>
                 &bull;
-                <p><a href={i.link}>{language === defaultLanguage ? i.subtitlePT : i.subtitleEN}</a></p>
+                <p><a href={i.link} target="_blank">{language === defaultLanguage ? i.subtitlePT : i.subtitleEN}</a></p>
               </span>
               <p>{language === defaultLanguage ? i.descriptionPT : i.descriptionEN}</p>
               <span>
