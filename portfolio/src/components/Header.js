@@ -1,7 +1,7 @@
 import Lottie from "lottie-react";
 import colors from "../assets/colors.json";
 import styled from "styled-components";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 import { Link } from 'react-scroll';
 import { SocialMedia } from "./SocialMedia";
@@ -21,7 +21,6 @@ const Container = styled.header`
     justify-content: center;
     padding: 0;
     margin: 0 auto;
-    /* border: 1px solid red; */
   }
   
   .title{
@@ -83,7 +82,7 @@ const Container = styled.header`
       width: 0;
     }
     100% {
-      width: 50px;
+      width: 30px;
     }
   }
 
@@ -105,7 +104,7 @@ export const Header = () => {
           <Lottie animationData={colors} loop={true} style={{ height: 60, overflowY: "hidden" }} />
             <span>
               <h1>Laís Rodrigues</h1>
-              {language === defaultLanguage ? <p>Desenvolvedora Web Full Stack</p> : <p>Full Stack Web Developer</p>}
+              {language === defaultLanguage ? <p>Desenvolvedora Frontend</p> : <p>Frontend Developer</p>}
             </span>
         </div>
       </Link>

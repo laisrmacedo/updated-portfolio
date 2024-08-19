@@ -1,32 +1,23 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 
 export function useScrollObserver(targetRef) {
-  const { visibleId, setVisibleId } = useContext(GlobalContext)
-  const [isScrollStoped, setIsScrollStoped] = useState(true)
-  
-  useEffect(() => {
-    const navContainer = document.querySelector('#navContainer')
-    if(navContainer.addEventListener("scroll", (event) => event.isTrusted)){
-      setIsScrollStoped(false)
-    }
-  },[isScrollStoped])
+  const { visibleId, setVisibleId } = useContext(GlobalContext);
 
-
-  
   useEffect(() => {
     const callback = (entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting && isScrollStoped) {
-          setVisibleId(targetRef.current.id)
+        if (entry.isIntersecting) {
+          setVisibleId(entry.target.id);
+          console.log(targetRef.current)
         }
-      })
+      });
     };
 
     const options = {
-      root: null,
+      root: null, // Observe the viewport
       rootMargin: '0px',
-      threshold: 0.6
+      threshold: 0.4 // 60% of the element must be visible
     };
 
     const observer = new IntersectionObserver(callback, options);
@@ -40,7 +31,8 @@ export function useScrollObserver(targetRef) {
         observer.unobserve(targetRef.current);
       }
     };
-  }, []);
+  }, [setVisibleId, targetRef]);
 
   return visibleId;
 }
+

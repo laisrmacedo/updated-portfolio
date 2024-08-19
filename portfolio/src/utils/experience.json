@@ -1,10 +1,10 @@
 [
   {
-    "titlePT" : "Desenvolvedora Web Full Stack",
-    "titleEN" : "Frontend Web Developer",
+    "titlePT" : "Desenvolvedora Frontend",
+    "titleEN" : "Frontend Developer",
     "subtitlePT" : "Docunder",
     "subtitleEN" : "Docunder",
-    "link" : "https://www.linkedin.com/company/docunder/about/",
+    "link" : "https://github.com/Organizacao-Docunder",
     "timePT" : "JAN - PRESENTE",
     "timeEN" : "JAN - PRESENT",
     "descriptionPT" : "Docunder é uma plataforma de documentação técnica funcional e colaborativa que irá permitir a criação, edição, compartilhamento e organização eficiente de documentos técnicos sobre produtos de hardware ou software. Neste projeto, sou responsável pelo desenvolvimento frontend e participo do desenvolvimento backend. Estamos utilizando ferramentas como NextJS, TypeScript, CSS, Docker, NodeJS, Prisma e Figma. Trabalho em uma equipa multifuncional e multicultural, que inclui profissionais de UX/UI design, gestão de produto, design de produto, metodologias ágeis e desenvolvimento.",
