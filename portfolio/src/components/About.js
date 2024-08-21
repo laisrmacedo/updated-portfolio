@@ -81,7 +81,7 @@ export const About = () => {
           <figure>
             <img src={myself}/>
           </figure>
-          <span>Profissional da área de Desenvolvimento Web há 2 anos. Nesse período, desenvolvi habilidades técnicas com destaque para React, JavaScript, CSS, Nodejs e Testes Unitários. Tenho vários projetos pessoais desenvolvidos e um deles é o Convite de Casamento, uma aplicação web full stack autoral que já foi utilizada para facilitar a organização da lista de convidados de dois casamentos, sendo aprovada pelos usuários. Além disso, sou formada em Engenharia Civil pela UFCG, área de estudo que me fez desenvolver habilidades como resolução de problemas, atenção aos detalhes, gerenciamento de tempo, pensamento lógico e analítico, trabalho em equipe, comunicação eficiente e  criatividade. </span>
+          <span>Sou Desenvolvedora Frontend e há 2 anos estou aprimorando minhas habilidades. Nesse período, desenvolvi habilidades técnicas com destaque para React, JavaScript, CSS, Nodejs e Testes Unitários. Tenho vários projetos pessoais desenvolvidos e um deles é o Convite de Casamento, uma aplicação web full stack autoral que já foi utilizada para facilitar a organização da lista de convidados de dois casamentos, sendo aprovada pelos usuários. Além disso, sou formada em Engenharia Civil pela UFCG, área de estudo que me fez desenvolver habilidades como resolução de problemas, atenção aos detalhes, gerenciamento de tempo, pensamento lógico e analítico, trabalho em equipe, comunicação eficiente e  criatividade. </span>
         </PhotoBox>
         :
         <>
@@ -107,7 +107,7 @@ export const About = () => {
           <figure>
             <img src={myself}/>
           </figure>
-          <span>I have been a front-end developer for 2 years. During this time, I have developed strong technical skills, particularly in React, JavaScript, CSS, Node.js, and unit testing. I have completed several personal projects, including a full-stack web application called Wedding Invitation. This project has been used to help organize guest lists for two weddings and received positive feedback from users. Additionally, I hold a degree in Civil Engineering from UFCG, where I developed skills such as problem-solving, attention to detail, time management, logical and analytical thinking, teamwork, effective communication, and creativity.</span>
+          <span>I have been a Frontend Developer for 2 years. During this time, I have developed strong technical skills, particularly in React, JavaScript, CSS, Node.js, and unit testing. I have completed several personal projects, including a full-stack web application called Wedding Invitation. This project has been used to help organize guest lists for two weddings and received positive feedback from users. Additionally, I hold a degree in Civil Engineering from UFCG, where I developed skills such as problem-solving, attention to detail, time management, logical and analytical thinking, teamwork, effective communication, and creativity.</span>
         </PhotoBox>
         :
         <>
@@ -115,7 +115,7 @@ export const About = () => {
           <figure>
             <img src={myself}/>
           </figure>
-          <span>I'm a Full-Stack Web Developer and I've been improving my skills for over 2 years. In this process, I'd like to highlight my dedication to Labenu's Full-Stack Web Programming course for 6 intensive months, where I developed frontend and backend technical skills. These include React, CSS, JavaScript, Api Restful, HTTP, Jest, Node.JS, TypeScript, SQL, Git, Github, Unit Testing and UI Design, as well as over 1000 hours of practical experience, guided by agile methodologies.</span>
+          <span>I'm a Frontend Developer and I've been improving my skills for over 2 years. In this process, I'd like to highlight my dedication to Labenu's Full-Stack Web Programming course for 6 intensive months, where I developed frontend and backend technical skills. These include React, CSS, JavaScript, Api Restful, HTTP, Jest, Node.JS, TypeScript, SQL, Git, Github, Unit Testing and UI Design, as well as over 1000 hours of practical experience, guided by agile methodologies.</span>
         </PhotoBox>
 
         <p>I'm currently part of the Docunder team, a functional and collaborative technical documentation platform that will enable the efficient creation, editing, sharing and organization of technical documents. In this project, I'm part of the front-end team and help with the back-end. We are using tools such as NextJS, TypeScript, Tailwind CSS, Docker, NodeJS, Prisma and Figma. The team is cross-functional and includes professionals from UX/UI design, product management, product design, agile methodologies and development.</p>
