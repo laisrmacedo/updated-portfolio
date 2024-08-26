@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://media.licdn.com/dms/image/D4E2DAQE4iaYS6rZhcQ/profile-treasury-image-shrink_8192_8192/0/1690466087605?e=1691078400&v=beta&t=h1qlQFGUVyF1YqKOzOduy85pXwez--1UWe0_a5nlxXY" />
+  <img src="https://github.com/laisrmacedo/updated-portfolio/blob/main/portfolio/public/logo192.png?raw=true"/>
 </p>
 <h3 align="center">PORTFOLIO 2.0</h3>
 <br>
