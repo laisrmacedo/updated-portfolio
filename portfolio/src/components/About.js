@@ -1,6 +1,6 @@
 import { useContext, useRef, useState } from "react";
 import styled from "styled-components";
-import myself from "../assets/myself.png";
+import myself from "../assets/myself2.jpg";
 import { GlobalContext } from "../context/GlobalContext"
 import { useScrollObserver } from "../hooks/useScrollObserver";
 import { Recommendation } from "./Recommendation";
