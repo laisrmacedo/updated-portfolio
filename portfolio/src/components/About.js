@@ -128,7 +128,7 @@ export const About = () => {
         </>
         )
       }
-      <aside>
+      {/* <aside>
         {language === defaultLanguage ? 
         <>
           <h4 className="degrade">#buscandoEmprego</h4>
@@ -140,7 +140,7 @@ export const About = () => {
           <a href="https://drive.google.com/file/d/1QHhCD98djfXezrVHhlZNsHE14eqZ4Nxk/view?usp=sharing" target="_blank">View full CV 📄</a>
         </>
         }
-      </aside>
+      </aside> */}
       <Recommendation/>
     </Container>
   )
