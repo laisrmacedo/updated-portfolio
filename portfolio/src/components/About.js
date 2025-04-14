@@ -81,7 +81,8 @@ export const About = () => {
           <figure>
             <img src={myself}/>
           </figure>
-          <span>Sou Desenvolvedora Frontend e há 2 anos estou aprimorando minhas habilidades. Nesse período, desenvolvi habilidades técnicas com destaque para React, JavaScript, CSS, Nodejs e Testes Unitários. Tenho vários projetos pessoais desenvolvidos e um deles é o Convite de Casamento, uma aplicação web full stack autoral que já foi utilizada para facilitar a organização da lista de convidados de dois casamentos, sendo aprovada pelos usuários. Além disso, sou formada em Engenharia Civil pela UFCG, área de estudo que me fez desenvolver habilidades como resolução de problemas, atenção aos detalhes, gerenciamento de tempo, pensamento lógico e analítico, trabalho em equipe, comunicação eficiente e  criatividade. </span>
+          <span>Sou Desenvolvedora Frontend em constante evolução. Nesse período, desenvolvi habilidades técnicas com foco em React, JavaScript, CSS, Node.js, Angular, TypeScript, e CSS. Tenho diversos projetos autorais, incluindo o Convite de Casamento, uma aplicação web full stack que já foi utilizada com sucesso na organização de dois casamentos, sendo bem avaliada pelos usuários. Sou formada em Engenharia Civil pela UFCG, graduação que contribuiu para o desenvolvimento de competências como resolução de problemas, atenção aos detalhes, gerenciamento de tempo, pensamento lógico e analítico, trabalho em equipe, comunicação eficaz e criatividade.
+          </span>
         </PhotoBox>
         :
         <>
@@ -89,10 +90,12 @@ export const About = () => {
           <figure>
             <img src={myself}/>
           </figure>
-          <span>Sou Desenvolvedora Frontend e há 2 anos estou aprimorando minhas habilidades. Nesse processo, destaco a minha dedicação durante 6 meses intensivos no curso de Programação Web Full Stack Integral da Labenu, onde desenvolvi habilidades técnicas de frontend e backend. Entre elas estão React, CSS, JavaScript, Api Restful, HTTP, Jest, Node.JS, TypeScript, SQL, Git, Github, Testes unitários e UI Design, além de mais de 1000 horas de experiência prática, guiadas por metodologias ágeis. </span>
+          <span>Sou Desenvolvedora Frontend em constante evolução. Nesse processo, destaco a minha dedicação no curso de Programação Web Full Stack Integral da Labenu, onde desenvolvi habilidades técnicas de frontend e backend. Entre elas estão React, CSS, JavaScript, Api Restful, HTTP, Jest, Node.JS, TypeScript, SQL, Git, Github, Testes unitários e UI Design, além de mais de 1000 horas de experiência prática, guiadas por metodologias ágeis. 
+          </span>
         </PhotoBox>
         
-        <p>Atualmente, faço parte da equipe Docunder, uma plataforma de documentação técnica funcional e colaborativa que permitirá a criação, a edição, o compartilhamento e a organização eficiente de documentos técnicos. Nesse projeto, faço parte da equipe front-end e auxilio no back-end. Estamos utilizando ferramentas como NextJS, TypeScript, Tailwind CSS, Docker, NodeJS, Prisma e Figma. A equipe é multifuncional e inclui profissionais de design de UX/UI, gerenciamento de produtos, design de produtos, metodologias ágeis e desenvolvimento.</p>
+        <p>Atualmente, faço parte da equipe Global Hitss/Claro Brasil como desenvolvedora frontend. Em resumo, atuo no desenvolvimento e manutenção de interfaces web responsivas utilizando Angular. Sou responsável por implementar componentes reutilizáveis, consumir APIs REST, aplicar boas práticas de versionamento com Git e garantir a qualidade visual e funcional das aplicações com foco na experiência do usuário.
+        </p>
         
         <p>Até então, tenho vários projetos pessoais desenvolvidos. Um deles é o Wedding Invitation, uma aplicação web full stack, autoral e que é utilizada em situações reais para facilitar a organização da lista de convidados de casamentos. Nesse projeto, são utilizadas tecnologias como React, Styled-Components, React Router, Axios e integração de API, além de NodeJS, Typescript, Express e PostgreSQL.</p>
 
@@ -107,7 +110,7 @@ export const About = () => {
           <figure>
             <img src={myself}/>
           </figure>
-          <span>I have been a Frontend Developer for 2 years. During this time, I have developed strong technical skills, particularly in React, JavaScript, CSS, Node.js, and unit testing. I have completed several personal projects, including a full-stack web application called Wedding Invitation. This project has been used to help organize guest lists for two weddings and received positive feedback from users. Additionally, I hold a degree in Civil Engineering from UFCG, where I developed skills such as problem-solving, attention to detail, time management, logical and analytical thinking, teamwork, effective communication, and creativity.</span>
+          <span>I am a Frontend Developer in continuous growth. During this journey, I have developed technical skills focused on React, JavaScript, CSS, Node.js, Angular, TypeScript, and SCSS. I have several personal projects, including Convite de Casamento, a full stack web application that has been successfully used in organizing two weddings and received positive feedback from users. I hold a degree in Civil Engineering from UFCG, a background that helped me develop skills such as problem-solving, attention to detail, time management, logical and analytical thinking, teamwork, effective communication, and creativity.</span>
         </PhotoBox>
         :
         <>
@@ -115,10 +118,10 @@ export const About = () => {
           <figure>
             <img src={myself}/>
           </figure>
-          <span>I'm a Frontend Developer and I've been improving my skills for over 2 years. In this process, I'd like to highlight my dedication to Labenu's Full-Stack Web Programming course for 6 intensive months, where I developed frontend and backend technical skills. These include React, CSS, JavaScript, Api Restful, HTTP, Jest, Node.JS, TypeScript, SQL, Git, Github, Unit Testing and UI Design, as well as over 1000 hours of practical experience, guided by agile methodologies.</span>
+          <span>I am a Frontend Developer in continuous growth. Throughout this journey, I highlight my dedication to the Full Stack Web Development Immersive Program at Labenu, where I developed technical skills in both frontend and backend. These include React, CSS, JavaScript, RESTful APIs, HTTP, Jest, Node.js, TypeScript, SQL, Git, GitHub, Unit Testing, and UI Design, along with over 1000 hours of hands-on experience guided by agile methodologies.</span>
         </PhotoBox>
 
-        <p>I'm currently part of the Docunder team, a functional and collaborative technical documentation platform that will enable the efficient creation, editing, sharing and organization of technical documents. In this project, I'm part of the front-end team and help with the back-end. We are using tools such as NextJS, TypeScript, Tailwind CSS, Docker, NodeJS, Prisma and Figma. The team is cross-functional and includes professionals from UX/UI design, product management, product design, agile methodologies and development.</p>
+        <p>Currently, I am part of the Global Hitss/Claro Brasil team as a Frontend Developer. In summary, I work on the development and maintenance of responsive web interfaces using Angular. I am responsible for implementing reusable components, consuming REST APIs, applying best practices in version control with Git, and ensuring the visual and functional quality of the applications with a focus on user experience.</p>
 
         <p>To date, I have developed several personal projects. One of them is Wedding Invitation, a full-stack, authored web application that is used in real-life situations to facilitate the organization of wedding guest lists. This project uses technologies such as React, Styled-Components, React Router, Axios and API integration, as well as NodeJS, Typescript, Express and PostgreSQL. </p>
 
