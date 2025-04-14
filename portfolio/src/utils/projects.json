@@ -68,5 +68,19 @@
     "category": "full stack",
     "endedPT": "setembro 2023",
     "endedEN": "september 2023"
+  },
+  {
+    "id": 6,
+    "titlePT": "Gerenciador de Estoque",
+    "titleEN": "Inventory Manager",
+    "descriptionPT": "Solução simples e eficaz para facilitar o gerenciamento do inventário de uma empresa fictícia, especialmente no que se refere ao monitoramento das datas de validade dos produtos.",
+    "descriptionEN": "Simple and effective solution to facilitate the management of a fictitious company's inventory, especially regarding the monitoring of product expiration dates.",
+    "deploy": "https://vitalatte.onrender.com/",
+    "repository": "https://github.com/laisrmacedo/usavings-challenges",
+    "image": "https://github.com/laisrmacedo/usavings-challenges/blob/main/inventory-frontend/src/assets/logo.png?raw=true",
+    "tools": ["angular", "typescript", "CSS", "NestJS",  "MySQL", "TypeORM"],
+    "category": "full stack",
+    "endedPT": "setembro 2024",
+    "endedEN": "september 2024"
   }
 ]
