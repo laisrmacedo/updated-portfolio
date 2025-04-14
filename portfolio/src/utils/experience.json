@@ -1,30 +1,30 @@
 [
   {
+    "titlePT" : "Desenvolvedora Frontend Junior",
+    "titleEN" : "Junior Frontend Developer",
+    "subtitlePT" : "Claro Brasil",
+    "subtitleEN" : "Claro Brasil",
+    "link" : "https://www.linkedin.com/company/clarobrasil/posts/?feedView=all",
+    "timePT" : "ABR/25 - PRESENTE",
+    "timeEN" : "ABR/25 - PRESENT",
+    "descriptionPT" : "Atuação no desenvolvimento e manutenção de interfaces web responsivas utilizando Angular. Responsável por implementar componentes reutilizáveis, consumir APIs REST, aplicar boas práticas de versionamento com Git e garantir a qualidade visual e funcional das aplicações com foco na experiência do usuário.",
+    "descriptionEN" : "Acting in the development and maintenance of responsive web interfaces using Angular. Responsible for implementing reusable components, consuming REST APIs, applying good versioning practices with Git, and ensuring the visual and functional quality of applications with a focus on user experience.",
+    "skillsPT" : ["Angular", "TypeScript", "SCSS", "Figma"],
+    "skillsEN" : ["Angular", "TypeScript", "SCSS", "Figma"],
+    "more": ""
+  },
+  {
     "titlePT" : "Desenvolvedora Frontend",
     "titleEN" : "Frontend Developer",
     "subtitlePT" : "Docunder",
     "subtitleEN" : "Docunder",
     "link" : "https://github.com/Organizacao-Docunder",
-    "timePT" : "JAN - PRESENTE",
-    "timeEN" : "JAN - PRESENT",
+    "timePT" : "JAN/24 - JAN/25",
+    "timeEN" : "JAN/24 - JAN/25",
     "descriptionPT" : "Docunder é uma plataforma de documentação técnica funcional e colaborativa que irá permitir a criação, edição, compartilhamento e organização eficiente de documentos técnicos sobre produtos de hardware ou software. Neste projeto, sou responsável pelo desenvolvimento frontend e participo do desenvolvimento backend. Estamos utilizando ferramentas como NextJS, TypeScript, CSS, Docker, NodeJS, Prisma e Figma. Trabalho em uma equipa multifuncional e multicultural, que inclui profissionais de UX/UI design, gestão de produto, design de produto, metodologias ágeis e desenvolvimento.",
     "descriptionEN" : "Docunder is a functional and collaborative technical documentation platform that will enable the efficient creation, editing, sharing and organization of technical documents on hardware or software products. In this project, I am responsible for frontend development and participate in backend development. We are using tools such as NextJS, TypeScript, CSS, Docker, NodeJS, Prisma and Figma. I work in a multifunctional and multicultural team, which includes professionals from UX/UI design, product management, product design, agile methodologies and development.",
     "skillsPT" : ["NextJS", "TypeScript", "Tailwind CSS", "Node.JS", "Prisma", "Docker", "Figma"],
     "skillsEN" : ["NextJS", "TypeScript", "Tailwind CSS", "Node.JS", "Prisma", "Docker", "Figma"],
-    "more": ""
-  },
-  {
-    "titlePT" : "Desenvolvedora Web Full Stack",
-    "titleEN" : "Full Stack Web Developer",
-    "subtitlePT" : "Freelancer",
-    "subtitleEN" : "Freelancer",
-    "link" : "",
-    "timePT" : "MAI - PRESENTE",
-    "timeEN" : "MAY - PRESENT",
-    "descriptionPT" : "Desenvolvimento de soluções web personalizadas, com implementação do front-end e/ou back-end.",
-    "descriptionEN" : "Development of custom web solutions, with front-end and/or back-end implementation.",
-    "skillsPT" : ["React", "JavaScript", "TypeScript", "CSS", "Node.JS", "Jest"],
-    "skillsEN" : ["React", "JavaScript", "TypeScript", "CSS", "Node.JS", "Jest"],
     "more": ""
   },
   {
